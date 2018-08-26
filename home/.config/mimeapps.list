@@ -1,0 +1,13 @@
+[Default Applications]
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+
+[Added Associations]
+application/javascript=vscode_vscode.desktop;
+text/x-haskell=vscode_vscode.desktop;
+application/x-yaml=vscode_vscode.desktop;
+text/markdown=vscode_vscode.desktop;
+audio/x-mod=gedit.desktop;

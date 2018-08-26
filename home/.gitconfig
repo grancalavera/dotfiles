@@ -1,0 +1,7 @@
+[user]
+	name = Leon Coto
+	email = leoncoto@gmail.com
+[core]
+	editor = code -w
+[push]
+	default = simple
