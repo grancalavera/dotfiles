@@ -33,6 +33,7 @@ cd ~/dotfiles
 stow -Rtv ~ home
 stow -Rtv ~ home-minimal
 ```
+
 # i3 installation on Ubuntu
 
 ## Todo
@@ -47,6 +48,7 @@ stow -Rtv ~ home-minimal
   by default (or at least without my intervention) on gnome https://wiki.ubuntu.com/LightDM
 - trackpad configuration isn't working
 - mouse cursor is huge when using 4k monitor
+- how to set a gnome desktop session in ~
 
 ## Issues
 
@@ -153,3 +155,7 @@ https://www.virtualbox.org/manual/ch04.html#idm2100
 https://askubuntu.com/questions/408784/after-doing-a-sudo-apt-get-install-app-where-does-the-application-get-stored
 https://help.ubuntu.com/community/VirtualBox/GuestAdditions
 https://www.stefaanlippens.net/bashrc_and_others/
+
+## Running a gnome session and i3
+
+http://zork.net/~st/jottings/gnome-i3.html

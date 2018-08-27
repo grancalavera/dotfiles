@@ -98,3 +98,8 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export EDITOR="code -w"
 export PATH=~/.local/bin:~/.npm-packages/bin::~/.yarn-packages/bin:$PATH
+
+if [ "$DESKTOP_SESSION" = 'i3' ]; then
+  eval $(gnome-keyring-daemon --start)
+  export SSH_AUTH_SOCK
+fi
