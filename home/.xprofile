@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 echo "$(date): .profile executed"
-
 setxkbmap us_intl -option compose:ralt_alt -option ctrl:swapcaps
