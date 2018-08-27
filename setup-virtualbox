@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-set -e
-sudo -v
-DOTFILES=$(cd "$(dirname "$0")" && pwd)
-sudo apt install -y `paste -d ' ' -s packages-virtualbox`

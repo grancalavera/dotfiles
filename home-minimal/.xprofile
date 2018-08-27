@@ -1,7 +1,0 @@
-# export TERMINAL=/usr/bin/alacritty
-test -d ${HOME}/bin && export PATH=${HOME}/bin:${PATH}
-
-# export TERMINAL PATH
-export PATH
-
-setxkbmap us_intl -option compose:ralt -option ctrl:nocaps
