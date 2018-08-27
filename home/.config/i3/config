@@ -155,4 +155,4 @@ bar {
         status_command i3status
 }
 
-exec_always "setxkbmap us_intl -option ctrl:nocaps -option compose:ralt_alt"
+exec "setxkbmap us_intl -option ctrl:nocaps -option compose:ralt_alt"
