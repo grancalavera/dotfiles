@@ -20,5 +20,9 @@
     "node_modules": true
   },
   "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true
+  "files.trimTrailingWhitespace": true,
+  "editor.rulers": [
+    80
+  ],
+  "workbench.colorTheme": "Solarized Light"
 }

@@ -158,4 +158,5 @@ https://www.stefaanlippens.net/bashrc_and_others/
 
 ## Running a gnome session and i3
 
+Recommended
 http://zork.net/~st/jottings/gnome-i3.html
