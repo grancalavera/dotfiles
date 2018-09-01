@@ -25,3 +25,8 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+if [ "$DESKTOP_SESSION" = 'i3' ]; then
+  eval $(gnome-keyring-daemon --start)
+  export SSH_AUTH_SOCK
+fi
