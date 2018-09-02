@@ -203,5 +203,4 @@ bar {
   }
 }
 
-# https://github.com/DaveDavenport/rofi/wiki/themes
-bindsym $mod+d exec rofi -show run -theme solarized.rasi
+bindsym $mod+d exec rofi -show combi
