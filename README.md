@@ -39,16 +39,12 @@ stow -Rtv ~ home-minimal
 ## Todo
 
 - suspend on lid close
-- change font size on bottom status bar
-- trackpad natural scrolling
+- trackpad configuration isn't working:
+  trackpad natural scrolling
 - https://www.youtube.com/watch?v=j1I63wGcvU4
-- login keyring is not unlocked on login
-- load order of shell dotfiles https://medium.com/@rajsek/zsh-bash-startup-files-loading-order-bashrc-zshrc-etc-e30045652f2e
-- might need to install lightdm to handle turning on all the stuff that is turned on
-  by default (or at least without my intervention) on gnome https://wiki.ubuntu.com/LightDM
-- trackpad configuration isn't working
 - mouse cursor is huge when using 4k monitor
-- how to set a gnome desktop session in ~
+- multiple monitor conditional configuration (see https://medium.com/@labruillere/minimal-i3-ubuntu-18-04-ba1bb31436ff
+  )
 
 ## Issues
 
