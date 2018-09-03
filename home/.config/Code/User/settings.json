@@ -21,7 +21,5 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "editor.rulers": [
-    80
-  ]
+  "editor.rulers": [80]
 }
