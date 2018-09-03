@@ -204,3 +204,4 @@ bar {
 }
 
 bindsym $mod+d exec rofi -show combi
+exec_always --no-startup-id nm-applet

@@ -12,3 +12,6 @@ unzip -q "${TEMP_DIR}/fa.zip" -d ${TEMP_DIR}
 mkdir -p ~/.fonts
 cp "${TEMP_DIR}"/fontawesome-free-5.3.1-desktop/otfs/*  ~/.fonts
 rm -rf "${TEMP_DIR}"
+
+stow -Rv home
+

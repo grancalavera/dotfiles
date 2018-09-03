@@ -1,40 +1,11 @@
 # dotfiles
 
-## ubuntu
-
-Install
+## Setup
 
 ```
 cd ~/dotfiles
-stow -tv ~ home
+./setup
 ```
-
-Update
-
-```
-cd ~/dotfiles
-stow -Rtv ~ home
-```
-
-## ubuntu i3
-
-Intall
-
-```
-cd ~/dotfiles
-stow -tv ~ home
-stow -tv ~ home-minimal
-```
-
-Update
-
-```
-cd ~/dotfiles
-stow -Rtv ~ home
-stow -Rtv ~ home-minimal
-```
-
-# i3 installation on Ubuntu
 
 ## Todo
 
