@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -e
+sudo -v
+stow -Dv -t ~ home i3
+sudo stow -Dv -t /etc etc

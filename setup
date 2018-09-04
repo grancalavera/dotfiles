@@ -13,5 +13,5 @@ mkdir -p ~/.fonts
 cp "${TEMP_DIR}"/fontawesome-free-5.3.1-desktop/otfs/*  ~/.fonts
 rm -rf "${TEMP_DIR}"
 
-stow -Rv -t ~ home
+stow -Rv -t ~ home i3
 sudo stow -Rv -t /etc etc

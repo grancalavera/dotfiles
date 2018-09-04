@@ -176,6 +176,7 @@ exec_always --no-startup-id /home/grancalavera/.config/screen-layout.sh
 exec "spotify"
 # https://www.reddit.com/r/i3wm/comments/7xih67/cant_get_spotify_to_open_at_the_specified/
 for_window [class="Spotify"] move window to workspace $workspace10
+assign [class="Wfica"] workspace $workspace9
 
 set $bg-color 	         #2f343f
 set $inactive-bg-color   #2f343f
