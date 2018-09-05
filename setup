@@ -13,7 +13,6 @@ function install {
   rm -rf "${TEMP_DIR}"
 }
 
-
 sudo -v
 sudo apt update
 sudo apt install -qy $(paste -d ' ' -s packages)
