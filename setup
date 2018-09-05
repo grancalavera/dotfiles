@@ -1,17 +1,24 @@
 #!/usr/bin/env bash
-
 set -e
+DOTFILES=$(cd "$(dirname "$0")" && pwd)
+
+# Install a downloaded file
+function install {
+  TEMP_DIR="$(mktemp -d -t dotfiles.XXX)"
+  INSTALLERS=$@
+  for INSTALLER in $INSTALLERS; do
+    COMMAND=${DOTFILES}/installers/${INSTALLER}
+    ${COMMAND} ${TEMP_DIR}
+  done
+  rm -rf "${TEMP_DIR}"
+}
+
 
 sudo -v
 sudo apt update
 sudo apt install -qy $(paste -d ' ' -s packages)
 
-TEMP_DIR="$(mktemp -d -t dotfiles.XXX)"
-curl -s "https://use.fontawesome.com/releases/v5.3.1/fontawesome-free-5.3.1-desktop.zip" -o "${TEMP_DIR}/fa.zip"
-unzip -q "${TEMP_DIR}/fa.zip" -d ${TEMP_DIR}
-mkdir -p ~/.fonts
-cp "${TEMP_DIR}"/fontawesome-free-5.3.1-desktop/otfs/*  ~/.fonts
-rm -rf "${TEMP_DIR}"
+install $(ls ${DOTFILES}/installers)
 
 stow -Rv -t ~ home i3
 sudo stow -Rv -t /etc etc
