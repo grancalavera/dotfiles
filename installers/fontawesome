@@ -5,8 +5,8 @@ TEMP_DIR=${1}
 TEMP_ZIP=${TEMP_DIR}/fontawesome.zip
 
 curl \
-  -s "https://use.fontawesome.com/releases/v5.3.1/fontawesome-free-5.3.1-desktop.zip" \
+  -s "https://fontawesome.com/v4.7.0/assets/font-awesome-4.7.0.zip" \
   -o ${TEMP_ZIP}
 unzip -q ${TEMP_ZIP} -d ${TEMP_DIR}
 mkdir -p ~/.fonts
-cp ${TEMP_DIR}/fontawesome-free-5.3.1-desktop/otfs/*  ~/.fonts
+cp ${TEMP_DIR}/font-awesome-4.7.0/fonts/*.ttf  ~/.fonts

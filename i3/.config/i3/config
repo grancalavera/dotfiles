@@ -17,7 +17,7 @@ font pango:Ubuntu Condensed 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+# font pango:DejaVu Sans Mono 8
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -162,8 +162,8 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 
 bindsym Control+$mod+l exec i3lock
 
-exec_always feh --bg-tile /home/grancalavera/.config/background
-exec_always --no-startup-id /home/grancalavera/.config/screen-layout.sh
+exec_always feh --bg-tile ~/.config/background
+exec_always --no-startup-id ~/.config/screen-layout.sh
 
 exec "spotify"
 # https://www.reddit.com/r/i3wm/comments/7xih67/cant_get_spotify_to_open_at_the_specified/
@@ -172,7 +172,7 @@ assign [class="Wfica"] workspace $workspace9
 
 bar {
   position top
-  status_command i3blocks -c /home/grancalavera/.config/i3/i3blocks.conf
+  status_command i3blocks -c ~/.config/i3/i3blocks.conf
 }
 
 bindsym $mod+d exec rofi -show combi
