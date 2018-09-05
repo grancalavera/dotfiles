@@ -16,11 +16,12 @@ cd ~/dotfiles
 - mouse cursor is huge when using 4k monitor
 - multiple monitor conditional configuration (see https://medium.com/@labruillere/minimal-i3-ubuntu-18-04-ba1bb31436ff
   )
+- backup to s3 https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html
 
 ## Issues
 
 - after closing i3 session and the suspending laptop on
-  the login screen, laptop didn't wake up after opeing
+  the login screen, laptop didn't wake up after opening
   the lid again
 - then, vscode and code symlinks in snap were lost
 - links re-appeared after logging out an logging back
