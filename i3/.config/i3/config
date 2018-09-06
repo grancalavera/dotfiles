@@ -178,3 +178,13 @@ bar {
 bindsym $mod+d exec rofi -show combi
 exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
+
+set $touchpad "SynPS/2 Synaptics TouchPad"
+set $tapping 278
+set $naturalScrolling 286
+set $dragLock 282
+set $accelSpeed 298
+exec xinput set-prop $touchpad $tapping 1
+exec xinput set-prop $touchpad $naturalScrolling 1
+exec xinput set-prop $touchpad $dragLock 1
+exec_always xinput set-prop $touchpad $accelSpeed 1.500000
