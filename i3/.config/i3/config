@@ -179,12 +179,28 @@ bindsym $mod+d exec rofi -show combi
 exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
 
+# https://www.reddit.com/r/i3wm/comments/516e8c/tap_to_click_touchpad/
+# xinput list
+# xinput list-props <device id>
 set $touchpad "SynPS/2 Synaptics TouchPad"
-set $tapping 278
-set $naturalScrolling 286
-set $dragLock 282
-set $accelSpeed 298
-exec xinput set-prop $touchpad $tapping 1
-exec xinput set-prop $touchpad $naturalScrolling 1
-exec xinput set-prop $touchpad $dragLock 1
-exec xinput set-prop $touchpad $accelSpeed 1.500000
+set $appleTouchpad "Leon Coto Rodriguez’s Trackpad"
+
+set $tapping 279
+set $naturalScrolling 287
+set $dragLock 283
+set $accelSpeed 297
+
+set $tappingValue 1
+set $naturalScrollingValue 1
+set $dragLockValue 1
+set $accelSpeedValue 1.500000
+
+exec_always --no-startup-id xinput set-prop $touchpad $tapping $tappingValue
+exec_always --no-startup-id xinput set-prop $touchpad $naturalScrolling $naturalScrollingValue
+exec_always --no-startup-id xinput set-prop $touchpad $dragLock $dragLockValue
+exec_always --no-startup-id xinput set-prop $touchpad $accelSpeed $accelSpeedValue
+
+exec_always --no-startup-id xinput set-prop $appleTouchpad $tapping $tappingValue
+exec_always --no-startup-id xinput set-prop $appleTouchpad $naturalScrolling $naturalScrollingValue
+exec_always --no-startup-id xinput set-prop $appleTouchpad $dragLock $dragLockValue
+exec_always --no-startup-id xinput set-prop $appleTouchpad $accelSpeed $accelSpeedValue
