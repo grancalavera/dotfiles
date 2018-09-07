@@ -17,6 +17,8 @@ cd ~/dotfiles
 - multiple monitor conditional configuration (see https://medium.com/@labruillere/minimal-i3-ubuntu-18-04-ba1bb31436ff
   )
 - backup to s3 https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html
+- add brittany configuration
+- write installer for haskell-ide-engine
 
 ## Issues
 
