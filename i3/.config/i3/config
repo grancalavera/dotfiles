@@ -195,12 +195,12 @@ set $naturalScrollingValue 1
 set $dragLockValue 1
 set $accelSpeedValue 1.500000
 
-exec_always --no-startup-id xinput set-prop $touchpad $tapping $tappingValue
-exec_always --no-startup-id xinput set-prop $touchpad $naturalScrolling $naturalScrollingValue
-exec_always --no-startup-id xinput set-prop $touchpad $dragLock $dragLockValue
-exec_always --no-startup-id xinput set-prop $touchpad $accelSpeed $accelSpeedValue
+exec --no-startup-id xinput set-prop $touchpad $tapping $tappingValue
+exec --no-startup-id xinput set-prop $touchpad $naturalScrolling $naturalScrollingValue
+exec --no-startup-id xinput set-prop $touchpad $dragLock $dragLockValue
+exec --no-startup-id xinput set-prop $touchpad $accelSpeed $accelSpeedValue
 
-exec_always --no-startup-id xinput set-prop $appleTouchpad $tapping $tappingValue
-exec_always --no-startup-id xinput set-prop $appleTouchpad $naturalScrolling $naturalScrollingValue
-exec_always --no-startup-id xinput set-prop $appleTouchpad $dragLock $dragLockValue
-exec_always --no-startup-id xinput set-prop $appleTouchpad $accelSpeed $accelSpeedValue
+exec --no-startup-id xinput set-prop $appleTouchpad $tapping $tappingValue
+exec --no-startup-id xinput set-prop $appleTouchpad $naturalScrolling $naturalScrollingValue
+exec --no-startup-id xinput set-prop $appleTouchpad $dragLock $dragLockValue
+exec --no-startup-id xinput set-prop $appleTouchpad $accelSpeed $accelSpeedValue
