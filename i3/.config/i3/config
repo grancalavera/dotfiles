@@ -134,15 +134,15 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # bindsym $mod+Shif+e exec gnome-session-quit
 # resize window (you can also use the mouse for that)
 mode "resize" {
-  bindsym j resize shrink width 10 px or 10 ppt
-  bindsym k resize grow height 10 px or 10 ppt
-  bindsym l resize shrink height 10 px or 10 ppt
-  bindsym semicolon resize grow width 10 px or 10 ppt
+  bindsym j resize shrink width 3 px or 3 ppt
+  bindsym k resize grow height 3 px or 3 ppt
+  bindsym l resize shrink height 3 px or 3 ppt
+  bindsym semicolon resize grow width 3 px or 3 ppt
 
-  bindsym Left resize shrink width 10 px or 10 ppt
-  bindsym Down resize grow height 10 px or 10 ppt
-  bindsym Up resize shrink height 10 px or 10 ppt
-  bindsym Right resize grow width 10 px or 10 ppt
+  bindsym Left resize shrink width 3 px or 3 ppt
+  bindsym Down resize grow height 3 px or 3 ppt
+  bindsym Up resize shrink height 3 px or 3 ppt
+  bindsym Right resize grow width 3 px or 3 ppt
 
   bindsym Return mode "default"
   bindsym Escape mode "default"
@@ -187,4 +187,4 @@ set $accelSpeed 298
 exec xinput set-prop $touchpad $tapping 1
 exec xinput set-prop $touchpad $naturalScrolling 1
 exec xinput set-prop $touchpad $dragLock 1
-exec_always xinput set-prop $touchpad $accelSpeed 1.500000
+exec xinput set-prop $touchpad $accelSpeed 1.500000

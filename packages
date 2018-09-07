@@ -2,5 +2,7 @@ arandr
 blueman
 feh
 i3blocks
+libicu-dev
+libtinfo-dev
 rofi
 xbacklight
