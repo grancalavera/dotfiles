@@ -18,7 +18,7 @@ cd ~/dotfiles
   )
 - backup to s3 https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html
 - add brittany configuration
-- write installer for haskell-ide-engine
+- write installer for haskell-ide-engine -https://wiki.archlinux.org/index.php/i3#Shutdown.2C_reboot.2C_lock_screen
 
 ## Issues
 
