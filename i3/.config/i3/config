@@ -113,7 +113,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 
 bindsym Control+$mod+l exec i3lock
-
+bindsym Control+$mod+q exec --no-startup-id systemctl poweroff -i
 
 bar {
   position top
