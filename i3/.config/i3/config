@@ -71,7 +71,6 @@ bindsym $mod+7 workspace $workspace7
 bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
-
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
 bindsym $mod+Shift+2 move container to workspace $workspace2
@@ -101,9 +100,7 @@ mode "resize" {
   bindsym Return mode "default"
   bindsym Escape mode "default"
 }
-
 bindsym $mod+r mode "resize"
-
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
@@ -122,9 +119,7 @@ bar {
 
 bindsym $mod+d exec rofi -show combi
 
-
 # exec stuff
-
 exec "setxkbmap us_intl -option ctrl:nocaps -option compose:ralt"
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 exec_always feh --bg-tile ~/.config/background
@@ -154,7 +149,6 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
 
 # known windows
-
 # https://www.reddit.com/r/i3wm/comments/7xih67/cant_get_spotify_to_open_at_the_specified/
 for_window [class="Spotify"] move window to workspace $workspace10
 assign [class="Wfica"] workspace $workspace9
