@@ -138,7 +138,7 @@ set $accelSpeed 298
 set $tappingValue 1
 set $naturalScrollingValue 1
 set $dragLockValue 1
-set $accelSpeedValue 1.500000
+set $accelSpeedValue 1.0
 
 exec --no-startup-id xinput set-prop $touchpad $tapping $tappingValue
 exec --no-startup-id xinput set-prop $touchpad $naturalScrolling $naturalScrollingValue
