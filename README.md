@@ -126,6 +126,9 @@ https://askubuntu.com/questions/408784/after-doing-a-sudo-apt-get-install-app-wh
 https://help.ubuntu.com/community/VirtualBox/GuestAdditions
 https://www.stefaanlippens.net/bashrc_and_others/
 
+Installing Chromium OS to run android apps:
+https://neverware.zendesk.com/hc/en-us/articles/360001615368
+
 ## Running a gnome session and i3
 
 Recommended

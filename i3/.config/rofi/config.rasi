@@ -7,13 +7,6 @@ configuration {
 }
 
 inputbar {
-  children: [prompt, textbox-prompt-colon, entry, case-indicator];
+  children: [entry, case-indicator];
   spacing: 0;
-}
-
-textbox-prompt-colon {
-  expand: false;
-  margin: 0px 0.3000em 0.0000em 0.0000em;
-  str: ":";
-  text-color: inherit;
 }
