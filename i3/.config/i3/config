@@ -128,22 +128,26 @@ exec_always --no-startup-id ~/.config/screen-layout.sh
 # https://www.reddit.com/r/i3wm/comments/516e8c/tap_to_click_touchpad/
 # xinput list
 # xinput list-props <device id>
-set $touchpad "SynPS/2 Synaptics TouchPad"
 
-set $tapping 278
-set $naturalScrolling 286
-set $dragLock 282
-set $accelSpeed 298
+set $internalTouchpad "SynPS/2 Synaptics TouchPad"
+
+set $tapping "Tapping Enabled"
+set $naturalScrolling "Natural Scrolling Enabled"
+set $tapDrag "Tapping Drag Enabled"
+set $tapDragLock "Tapping Drag Lock Enabled"
+set $accelSpeed "Accel Speed"
 
 set $tappingValue 1
 set $naturalScrollingValue 1
-set $dragLockValue 1
+set $tapDragValue 1
+set $tapDragLockValue 1
 set $accelSpeedValue 1.0
 
-exec --no-startup-id xinput set-prop $touchpad $tapping $tappingValue
-exec --no-startup-id xinput set-prop $touchpad $naturalScrolling $naturalScrollingValue
-exec --no-startup-id xinput set-prop $topreviousuchpad $dragLock $dragLockValue
-exec --no-startup-id xinput set-prop $touchpad $accelSpeed $accelSpeedValue
+exec --no-startup-id set-xinput $internalTouchpad $tapping $tappingValue
+exec --no-startup-id set-xinput $internalTouchpad $naturalScrolling $naturalScrollingValue
+exec --no-startup-id set-xinput $internalTouchpad $tapDrag $tapDragLockValue
+exec --no-startup-id set-xinput $internalTouchpad $tapDragLock $tapDragLockValue
+exec --no-startup-id set-xinput $internalTouchpad $accelSpeed $accelSpeedValue
 
 exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
