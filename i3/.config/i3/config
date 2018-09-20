@@ -125,11 +125,8 @@ exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 exec_always feh --bg-tile ~/.config/background
 exec_always --no-startup-id ~/.config/screen-layout.sh
 
-# https://www.reddit.com/r/i3wm/comments/516e8c/tap_to_click_touchpad/
-# xinput list
-# xinput list-props <device id>
-
 set $internalTouchpad "SynPS/2 Synaptics TouchPad"
+set $magicTrackpad "Leon Coto Rodriguez’s Trackpad"
 
 set $tapping "Tapping Enabled"
 set $naturalScrolling "Natural Scrolling Enabled"
@@ -143,11 +140,17 @@ set $tapDragValue 1
 set $tapDragLockValue 1
 set $accelSpeedValue 1.0
 
-exec --no-startup-id set-xinput $internalTouchpad $tapping $tappingValue
-exec --no-startup-id set-xinput $internalTouchpad $naturalScrolling $naturalScrollingValue
-exec --no-startup-id set-xinput $internalTouchpad $tapDrag $tapDragLockValue
-exec --no-startup-id set-xinput $internalTouchpad $tapDragLock $tapDragLockValue
-exec --no-startup-id set-xinput $internalTouchpad $accelSpeed $accelSpeedValue
+exec_always --no-startup-id set-xinput $internalTouchpad $tapping $tappingValue
+exec_always --no-startup-id set-xinput $internalTouchpad $naturalScrolling $naturalScrollingValue
+exec_always --no-startup-id set-xinput $internalTouchpad $tapDrag $tapDragLockValue
+exec_always --no-startup-id set-xinput $internalTouchpad $tapDragLock $tapDragLockValue
+exec_always --no-startup-id set-xinput $internalTouchpad $accelSpeed $accelSpeedValue
+
+exec_always --no-startup-id set-xinput $magicTrackpad $tapping $tappingValue
+exec_always --no-startup-id set-xinput $magicTrackpad $naturalScrolling $naturalScrollingValue
+exec_always --no-startup-id set-xinput $magicTrackpad $tapDrag $tapDragLockValue
+exec_always --no-startup-id set-xinput $magicTrackpad $tapDragLock $tapDragLockValue
+exec_always --no-startup-id set-xinput $magicTrackpad $accelSpeed $accelSpeedValue
 
 exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
