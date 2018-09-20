@@ -2,7 +2,6 @@
   "files.autoSave": "onFocusChange",
   "editor.formatOnSave": true,
   "workbench.startupEditor": "newUntitledFile",
-  "window.zoomLevel": 1,
   "editor.minimap.enabled": false,
   "workbench.activityBar.visible": false,
   "breadcrumbs.enabled": true,
@@ -24,6 +23,6 @@
   "editor.rulers": [
     80
   ],
-  "workbench.colorTheme": "Default High Contrast",
-  "files.trimFinalNewlines": true
+  "files.trimFinalNewlines": true,
+  "window.zoomLevel": 0
 }
