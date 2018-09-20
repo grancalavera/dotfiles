@@ -109,7 +109,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 1 toggle
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 
-bindsym Control+$mod+l exec i3lock
+bindsym Control+$mod+l exec i3lock -i ~/.config/background -t
 bindsym Control+$mod+q exec --no-startup-id systemctl poweroff -i
 
 bar {
@@ -142,7 +142,7 @@ set $accelSpeedValue 1.0
 
 exec --no-startup-id xinput set-prop $touchpad $tapping $tappingValue
 exec --no-startup-id xinput set-prop $touchpad $naturalScrolling $naturalScrollingValue
-exec --no-startup-id xinput set-prop $touchpad $dragLock $dragLockValue
+exec --no-startup-id xinput set-prop $topreviousuchpad $dragLock $dragLockValue
 exec --no-startup-id xinput set-prop $touchpad $accelSpeed $accelSpeedValue
 
 exec --no-startup-id blueman-applet
