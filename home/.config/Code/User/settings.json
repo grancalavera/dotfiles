@@ -20,9 +20,10 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "files.trimFinalNewlines": true,
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "tslint.autoFixOnSave": true,
+  "prettier.tslintIntegration": true,
+  "tslint.jsEnable": true
 }
