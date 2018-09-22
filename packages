@@ -6,3 +6,5 @@ libicu-dev
 libtinfo-dev
 rofi
 xbacklight
+tree
+htop
