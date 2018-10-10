@@ -22,8 +22,12 @@
   "files.trimTrailingWhitespace": true,
   "editor.rulers": [80],
   "files.trimFinalNewlines": true,
-  "window.zoomLevel": 0,
   "tslint.autoFixOnSave": true,
   "prettier.tslintIntegration": true,
-  "tslint.jsEnable": true
+  "tslint.jsEnable": true,
+  "window.zoomLevel": 0,
+  "editor.renderIndentGuides": false,
+  "guides.active.gutter": true,
+  "workbench.colorTheme": "Panda Syntax",
+  "cSpell.ignoreWords": ["unmount"]
 }
