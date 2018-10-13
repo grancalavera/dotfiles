@@ -99,3 +99,6 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 export EDITOR="code -w"
 export PATH=~/.local/bin:~/.npm-packages/bin::~/.yarn-packages/bin:$PATH
 
+alias tmute="pactl set-sink-mute 0 toggle"
+alias vup="pactl set-sink-volume 0 +5%"
+alias vdown="pactl set-sink-volume 0 -5%"
