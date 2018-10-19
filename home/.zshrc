@@ -64,6 +64,7 @@ export UPDATE_ZSH_DAYS=1
 plugins=(
   git
   gitignore
+  vscode
 )
 
 source $ZSH/oh-my-zsh.sh
