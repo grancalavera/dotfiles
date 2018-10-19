@@ -21,3 +21,13 @@ install $(ls ${DOTFILES}/installers)
 
 stow -Rv -t ~ home i3
 sudo stow -Rv -t /etc etc
+
+# Install vscode extensions
+# https://stackoverflow.com/questions/592620/how-to-check-if-a-program-exists-from-a-bash-script
+if command -v code >/dev/null; then
+  for EXT in $(paste -d ' ' -s ${DOTFILES}/vscode-extensions); do
+    code --install-extension ${EXT} --force
+  done;
+else
+  echo "vscode is not installed, ignoring"
+fi
