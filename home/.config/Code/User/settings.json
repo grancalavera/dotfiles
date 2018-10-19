@@ -1,12 +1,9 @@
 {
-  "files.autoSave": "onFocusChange",
-  "editor.formatOnSave": true,
   "workbench.startupEditor": "newUntitledFile",
   "editor.minimap.enabled": false,
   "workbench.activityBar.visible": false,
   "breadcrumbs.enabled": true,
   "workbench.editor.showTabs": false,
-  "window.menuBarVisibility": "hidden",
   "editor.renderWhitespace": "boundary",
   "terminal.integrated.rendererType": "dom",
   "editor.tabSize": 2,
@@ -25,9 +22,20 @@
   "tslint.autoFixOnSave": true,
   "prettier.tslintIntegration": true,
   "tslint.jsEnable": true,
-  "window.zoomLevel": 0,
   "editor.renderIndentGuides": false,
   "guides.active.gutter": true,
+  "cSpell.ignoreWords": [
+    "unmount",
+    "fortawesome",
+    "fontawesome",
+    "svgs",
+    "workspaces",
+    "lerna"
+  ],
   "workbench.colorTheme": "Panda Syntax",
-  "cSpell.ignoreWords": ["unmount"]
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.menuBarVisibility": "hidden",
+  "window.zoomLevel": 0
 }

@@ -328,10 +328,6 @@
     "command": "deleteAllRight"
   },
   {
-    "key": "alt+s",
-    "command": "workbench.action.files.save"
-  },
-  {
     "key": "ctrl+shift+p",
     "command": "editor.action.insertCursorAbove",
     "when": "editorTextFocus"
@@ -411,5 +407,14 @@
     "key": "ctrl+shift+z",
     "command": "-redo",
     "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+s",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "workbench.action.files.save"
   }
 ]
+save
