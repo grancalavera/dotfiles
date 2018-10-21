@@ -30,7 +30,8 @@
     "fontawesome",
     "svgs",
     "workspaces",
-    "lerna"
+    "lerna",
+    "predeploy"
   ],
   "workbench.colorTheme": "Panda Syntax",
   "files.autoSave": "onFocusChange",
