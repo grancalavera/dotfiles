@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -e
+DOTFILES=$(cd "$(dirname "$0")" && pwd)
+
+# Install a downloaded file
+function install {
+  TEMP_DIR="$(mktemp -d -t dotfiles.XXX)"
+  INSTALLERS=$@
+  for INSTALLER in $INSTALLERS; do
+    COMMAND=${DOTFILES}/installers/${INSTALLER}
+    ${COMMAND} ${TEMP_DIR}
+  done
+  rm -rf "${TEMP_DIR}"
+}
+
+sudo -v
+sudo apt update
+sudo apt install -qy $(paste -d ' ' -s packages)
+
+install $(ls ${DOTFILES}/installers)

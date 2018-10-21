@@ -1,33 +1,4 @@
 #!/usr/bin/env bash
-set -e
-DOTFILES=$(cd "$(dirname "$0")" && pwd)
-
-# Install a downloaded file
-function install {
-  TEMP_DIR="$(mktemp -d -t dotfiles.XXX)"
-  INSTALLERS=$@
-  for INSTALLER in $INSTALLERS; do
-    COMMAND=${DOTFILES}/installers/${INSTALLER}
-    ${COMMAND} ${TEMP_DIR}
-  done
-  rm -rf "${TEMP_DIR}"
-}
-
-sudo -v
-sudo apt update
-sudo apt install -qy $(paste -d ' ' -s packages)
-
-install $(ls ${DOTFILES}/installers)
-
-stow -Rv -t ~ home i3
-sudo stow -Rv -t /etc etc
-
-# Install vscode extensions
-# https://stackoverflow.com/questions/592620/how-to-check-if-a-program-exists-from-a-bash-script
-if command -v code >/dev/null; then
-  for EXT in $(paste -d ' ' -s ${DOTFILES}/vscode-extensions); do
-    code --install-extension ${EXT} --force
-  done;
-else
-  echo "vscode is not installed, ignoring"
-fi
+./setup-packages
+./setup-home
+./setup-vscode
