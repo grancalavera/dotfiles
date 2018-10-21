@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# https://askubuntu.com/questions/967073/i-upgraded-from-17-04-to-17-10-on-a-lenovo-t540p-which-has-broken-two-finger-tou
+# https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1722478
+
+sudo -v
+sudo modprobe -r psmouse
+sudo modprobe psmouse
