@@ -6,3 +6,5 @@
 sudo -v
 sudo modprobe -r psmouse
 sudo modprobe psmouse
+sleep 1
+i3-msg restart
