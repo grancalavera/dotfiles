@@ -37,6 +37,6 @@
   "files.autoSave": "onFocusChange",
   "editor.formatOnSave": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.menuBarVisibility": "hidden",
+  "window.menuBarVisibility": "toggle",
   "window.zoomLevel": 0
 }
