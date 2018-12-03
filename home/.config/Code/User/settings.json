@@ -38,5 +38,6 @@
   "editor.formatOnSave": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.menuBarVisibility": "toggle",
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "window.titleBarStyle": "custom"
 }

@@ -1,10 +1,13 @@
 arandr
 blueman
+curl
 feh
+i3
 i3blocks
 libicu-dev
 libtinfo-dev
 rofi
 xbacklight
+stow
 tree
 htop
