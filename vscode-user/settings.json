@@ -33,11 +33,13 @@
     "lerna",
     "predeploy"
   ],
-  "workbench.colorTheme": "Panda Syntax",
   "files.autoSave": "onFocusChange",
   "editor.formatOnSave": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.menuBarVisibility": "toggle",
   "window.zoomLevel": 0,
-  "window.titleBarStyle": "custom"
+  "cSpell.language": "en,en-GB",
+  "editor.wordWrapColumn": 100,
+  "editor.minimap.maxColumn": 100,
+  "window.titleBarStyle": "custom",
+  "workbench.colorTheme": "Shades of Purple"
 }

@@ -1,12 +1,18 @@
 #!/usr/bin/env bash
 set -e
 DOTFILES=$(cd "$(dirname "$0")" && pwd)
+CODE=${1}
+USER=${2}
+
+rm -rf "${USER}"
+mkdir -p "${USER}"
+stow -Rv -t "${USER}" vscode-user
 
 # Install vscode extensions
 # https://stackoverflow.com/questions/592620/how-to-check-if-a-program-exists-from-a-bash-script
-if command -v code >/dev/null; then
+if command -v ${CODE} >/dev/null; then
   for EXT in $(paste -d ' ' -s ${DOTFILES}/vscode-extensions); do
-    code --install-extension ${EXT} --force
+    ${CODE} --install-extension ${EXT} --force
   done;
 else
   echo "vscode is not installed, ignoring"
