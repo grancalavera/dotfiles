@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 ./setup-packages
 ./setup-home
-./setup-vscode
+./setup-vscode-standard
+./setup-vscode-insiders
