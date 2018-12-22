@@ -64,7 +64,6 @@ export UPDATE_ZSH_DAYS=1
 plugins=(
   git
   gitignore
-  vscode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -97,7 +96,8 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export EDITOR="code -w"
+alias codei="code-insiders"
+export EDITOR="code-insiders -w"
 export PATH=~/.local/bin:~/.npm-packages/bin::~/.yarn-packages/bin:$PATH
 
 alias tmute="pactl set-sink-mute 0 toggle"

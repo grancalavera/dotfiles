@@ -2,6 +2,6 @@
 	name = Leon Coto
 	email = leoncoto@gmail.com
 [core]
-	editor = code -w
+	editor = code-insiders -w
 [push]
 	default = simple
