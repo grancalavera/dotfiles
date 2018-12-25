@@ -1,6 +1,7 @@
 ahmadawais.shades-of-purple
 alanz.vscode-hie-server
 dbaeumer.vscode-eslint
+dracula-theme.theme-dracula
 eamodio.gitlens
 eg2.tslint
 esbenp.prettier-vscode
@@ -8,6 +9,7 @@ jpoissonnier.vscode-styled-components
 justusadam.language-haskell
 mikestead.dotenv
 msjsdiag.debugger-for-chrome
+robertohuertasm.vscode-icons
 spywhere.guides
 streetsidesoftware.code-spell-checker
 tinkertrain.theme-panda

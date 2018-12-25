@@ -41,5 +41,6 @@
   "editor.wordWrapColumn": 100,
   "editor.minimap.maxColumn": 100,
   "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "Shades of Purple"
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "vscode-icons"
 }
