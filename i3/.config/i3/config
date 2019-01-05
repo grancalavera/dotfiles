@@ -102,12 +102,14 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+# http://wiki.linuxquestions.org/wiki/XF86_keyboard_symbols
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 1 toggle
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
+bindsym XF86Display exec --no-startup-id toggle-screens
 
 bindsym Control+$mod+l exec i3lock -i ~/.config/background -t
 bindsym Control+$mod+q exec --no-startup-id systemctl poweroff -i
