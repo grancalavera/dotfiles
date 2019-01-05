@@ -107,3 +107,6 @@ alias tm="cd ~/Desktop/the-maze"
 alias tml="cd ~/Desktop/the-maze/packages/maze-lib"
 alias tmu="cd ~/Desktop/the-maze/packages/maze-ui"
 alias tmf="cd ~/Desktop/the-maze/packages/maze-functions"
+
+export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=' -R '
