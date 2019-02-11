@@ -100,9 +100,15 @@ alias code="code-insiders"
 export EDITOR="code-insiders -w"
 export PATH=~/.local/bin:~/.npm-packages/bin::~/.yarn-packages/bin:$PATH
 
-alias tmute="pactl set-sink-mute 0 toggle"
+alias vmute="pactl set-sink-mute 0 toggle"
 alias vup="pactl set-sink-volume 0 +5%"
 alias vdown="pactl set-sink-volume 0 -5%"
+function vset {
+  local VOL=$1
+  pactl set-sink-mute 0 0
+  pactl set-sink-volume 0 "${VOL}%"
+}
+
 alias tm="cd ~/Desktop/the-maze"
 alias tml="cd ~/Desktop/the-maze/packages/maze-lib"
 alias tmu="cd ~/Desktop/the-maze/packages/maze-ui"
