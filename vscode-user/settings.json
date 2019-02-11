@@ -17,7 +17,7 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "editor.rulers": [80],
+  "editor.rulers": [100],
   "files.trimFinalNewlines": true,
   "tslint.autoFixOnSave": true,
   "prettier.tslintIntegration": true,
@@ -43,6 +43,7 @@
   "workbench.colorTheme": "Activate UMBRA protocol",
   "workbench.iconTheme": "vscode-icons",
   "editor.minimap.maxColumn": 100,
-  "workbench.statusBar.visible": true,
-  "window.menuBarVisibility": "default"
+  "workbench.statusBar.visible": false,
+  "window.menuBarVisibility": "default",
+  "prettier.printWidth": 100
 }
