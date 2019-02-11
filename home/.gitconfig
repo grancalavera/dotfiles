@@ -5,3 +5,5 @@
 	editor = code-insiders -w
 [push]
 	default = simple
+[diff]
+	tool = meld
