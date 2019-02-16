@@ -128,7 +128,6 @@ exec_always feh --bg-tile ~/.config/background
 exec_always --no-startup-id ~/.config/screen-layout.sh
 
 set $internalTouchpad "Synaptics TM3381-002"
-set $magicTrackpad "Leon Coto Rodrig>uez’s Trackpad"
 
 set $tapping "Tapping Enabled"
 set $naturalScrolling "Natural Scrolling Enabled"
@@ -147,12 +146,6 @@ exec_always --no-startup-id set-xinput $internalTouchpad $naturalScrolling $natu
 exec_always --no-startup-id set-xinput $internalTouchpad $tapDrag $tapDragLockValue
 exec_always --no-startup-id set-xinput $internalTouchpad $tapDragLock $tapDragLockValue
 exec_always --no-startup-id set-xinput $internalTouchpad $accelSpeed $accelSpeedValue
-
-exec_always --no-startup-id set-xinput $magicTrackpad $tapping $tappingValue
-exec_always --no-startup-id set-xinput $magicTrackpad $naturalScrolling $naturalScrollingValue
-exec_always --no-startup-id set-xinput $magicTrackpad $tapDrag $tapDragLockValue
-exec_always --no-startup-id set-xinput $magicTrackpad $tapDragLock $tapDragLockValue
-exec_always --no-startup-id set-xinput $magicTrackpad $accelSpeed $accelSpeedValue
 
 exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
