@@ -40,10 +40,11 @@
   "cSpell.language": "en,en-GB",
   "editor.wordWrapColumn": 100,
   "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "Activate UMBRA protocol",
+  "workbench.colorTheme": "Cobalt2",
   "workbench.iconTheme": "vscode-icons",
   "editor.minimap.maxColumn": 100,
   "workbench.statusBar.visible": false,
   "window.menuBarVisibility": "default",
-  "prettier.printWidth": 100
+  "prettier.printWidth": 100,
+  "editor.autoIndent": false
 }
