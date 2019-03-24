@@ -40,11 +40,14 @@
   "cSpell.language": "en,en-GB",
   "editor.wordWrapColumn": 100,
   "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "Cobalt2",
+  "workbench.colorTheme": "Shades of Purple",
   "workbench.iconTheme": "vscode-icons",
   "editor.minimap.maxColumn": 100,
   "workbench.statusBar.visible": false,
   "window.menuBarVisibility": "default",
   "prettier.printWidth": 100,
-  "editor.autoIndent": false
+  "editor.autoIndent": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false
 }

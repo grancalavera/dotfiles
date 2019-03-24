@@ -96,7 +96,6 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias code="code-insiders"
 export EDITOR="code-insiders -w"
 export PATH=~/.local/bin:~/.npm-packages/bin::~/.yarn-packages/bin:$PATH
 

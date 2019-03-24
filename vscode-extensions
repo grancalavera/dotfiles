@@ -1,4 +1,5 @@
 ahmadawais.shades-of-purple
+alanz.vscode-hie-server
 dbaeumer.vscode-eslint
 dracula-theme.theme-dracula
 eamodio.gitlens
@@ -11,11 +12,9 @@ justusadam.language-haskell
 max-SS.Cyberpunk
 mikestead.dotenv
 msjsdiag.debugger-for-chrome
-ndmitchell.haskell-ghcid
-vscode-icons-team.vscode-icons
 spywhere.guides
 streetsidesoftware.code-spell-checker
 tinkertrain.theme-panda
-vigoo.stylish-haskell
+vscode-icons-team.vscode-icons
 wesbos.theme-cobalt2
 yzhang.markdown-all-in-one

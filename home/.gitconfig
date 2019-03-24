@@ -2,7 +2,7 @@
 	name = Leon Coto
 	email = leoncoto@gmail.com
 [core]
-	editor = code-insiders -w
+	editor = code -w
 [push]
 	default = simple
 [diff]
