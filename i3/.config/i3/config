@@ -2,6 +2,7 @@ set $mod Mod4
 font pango:Ubuntu Condensed 10
 floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Shift+Return exec nautilus
 bindsym $mod+Shift+q kill
 
 # change focus
@@ -153,4 +154,6 @@ exec --no-startup-id nm-applet
 # known windows
 # https://www.reddit.com/r/i3wm/comments/7xih67/cant_get_spotify_to_open_at_the_specified/
 for_window [class="Spotify"] move window to workspace $workspace10
+for_window [class="Nautilus"] floating enable
+
 assign [class="Wfica"] workspace $workspace9
