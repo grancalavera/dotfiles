@@ -2,4 +2,4 @@
 ./setup-packages
 ./setup-home
 ./setup-vscode-standard
-./setup-vscode-insiders
+# ./setup-vscode-insiders
