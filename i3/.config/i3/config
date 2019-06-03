@@ -84,7 +84,7 @@ bindsym $mod+Shift+8 move container to workspace $workspace8
 bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+w reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
@@ -155,5 +155,3 @@ exec --no-startup-id nm-applet
 # https://www.reddit.com/r/i3wm/comments/7xih67/cant_get_spotify_to_open_at_the_specified/
 for_window [class="Spotify"] move window to workspace $workspace10
 for_window [class="Nautilus"] floating enable
-
-assign [class="Wfica"] workspace $workspace9

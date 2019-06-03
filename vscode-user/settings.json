@@ -41,7 +41,6 @@
   "editor.wordWrapColumn": 100,
   "window.titleBarStyle": "custom",
   "workbench.colorTheme": "Shades of Purple",
-  "workbench.iconTheme": "vscode-icons",
   "editor.minimap.maxColumn": 100,
   "workbench.statusBar.visible": false,
   "window.menuBarVisibility": "default",
@@ -49,5 +48,17 @@
   "editor.autoIndent": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
-  "gitlens.codeLens.enabled": false
+  "gitlens.codeLens.enabled": false,
+  "editor.renderFinalNewline": true,
+  "workbench.editor.enablePreview": false,
+  "languageServerHaskell.useCustomHieWrapper": true,
+  "languageServerHaskell.useCustomHieWrapperPath": "hie-wrapper",
+  "cSpell.userWords": [
+    "Interop",
+    "esnext",
+    "optparse"
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
 }

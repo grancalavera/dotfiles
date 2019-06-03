@@ -1,2 +1,4 @@
 :set prompt "> "
 :set prompt-cont "| "
+
+:def catn \p -> return $ ":! cat -n \"" ++ p ++ "\""

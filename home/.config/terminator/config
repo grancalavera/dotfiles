@@ -7,6 +7,7 @@
   [[default]]
     [[[child1]]]
       parent = window0
+      profile = default
       type = Terminal
     [[[window0]]]
       parent = ""
@@ -29,12 +30,12 @@
     palette = "#20111b:#be100e:#858162:#eaa549:#426a79:#97522c:#989a9c:#968c83:#5e5252:#be100e:#858162:#eaa549:#426a79:#97522c:#989a9c:#d5ccba"
     show_titlebar = False
   [[Cobalt2]]
-    background_color = "#132738"
+    background_color = "#1d1f21"
     copy_on_selection = True
-    cursor_color = "#f0cc09"
-    foreground_color = "#ffffff"
+    cursor_color = "#c5c8c6"
+    foreground_color = "#c5c8c6"
     icon_bell = False
-    palette = "#000000:#ff0000:#38de21:#ffe50a:#1460d2:#ff005d:#00bbbb:#bbbbbb:#555555:#f40e17:#3bd01d:#edc809:#5555ff:#ff55ff:#6ae3fa:#ffffff"
+    palette = "#000000:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#ffffff:#000000:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#ffffff"
     show_titlebar = False
   [[Solarized Dark Higher Contrast]]
     background_color = "#001e27"
@@ -52,14 +53,6 @@
     icon_bell = False
     palette = "#000000:#b04b57:#87b379:#e5c179:#7d8fa4:#a47996:#85a7a5:#b3b8c3:#000000:#b04b57:#87b379:#e5c179:#7d8fa4:#a47996:#85a7a5:#ffffff"
     show_titlebar = False
-  [[Tomorrow Night]]
-    background_color = "#1d1f21"
-    copy_on_selection = True
-    cursor_color = "#c5c8c6"
-    foreground_color = "#c5c8c6"
-    icon_bell = False
-    palette = "#000000:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#ffffff:#000000:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#ffffff"
-    show_titlebar = False
   [[Tomorrow Night Blue]]
     background_color = "#002451"
     copy_on_selection = True
@@ -75,14 +68,6 @@
     foreground_color = "#cccccc"
     icon_bell = False
     palette = "#000000:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#ffffff:#000000:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#ffffff"
-    show_titlebar = False
-  [[ToyChest]]
-    background_color = "#24364b"
-    copy_on_selection = True
-    cursor_color = "#d5d5d5"
-    foreground_color = "#31d07b"
-    icon_bell = False
-    palette = "#2c3f58:#be2d26:#1a9172:#db8e27:#325d96:#8a5edc:#35a08f:#23d183:#336889:#dd5944:#31d07b:#e7d84b:#34a6da:#ae6bdc:#42c3ae:#d5d5d5"
     show_titlebar = False
   [[Violet Dark]]
     background_color = "#1c1d1f"
