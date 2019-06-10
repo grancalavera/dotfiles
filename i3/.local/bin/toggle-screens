@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-EXTERNAL_OUTPUT="HDMI2"
+EXTERNAL_OUTPUT="DP1"
 INTERNAL_OUTPUT="eDP1"
 
 # if we don't have a file, start at zero
