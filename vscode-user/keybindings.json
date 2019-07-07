@@ -1,6 +1,5 @@
 // Place your key bindings in this file to overwrite the defaults
-[
-  {
+[{
     "key": "ctrl+b",
     "command": "cursorLeft",
     "when": "textInputFocus"
@@ -415,5 +414,29 @@
   {
     "key": "ctrl+s",
     "command": "workbench.action.files.save"
+  },
+  {
+    "key": "ctrl+meta+j",
+    "command": "workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+left",
+    "command": "-workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "ctrl+meta+;",
+    "command": "workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+right",
+    "command": "-workbench.action.focusRightGroup"
+  },
+  {
+    "key": "ctrl+meta+k",
+    "command": "workbench.action.focusBelowGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+right",
+    "command": "-workbench.action.focusBelowGroup"
   }
 ]

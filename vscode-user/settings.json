@@ -17,7 +17,7 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "editor.rulers": [100],
+  "editor.rulers": [90],
   "files.trimFinalNewlines": true,
   "tslint.autoFixOnSave": true,
   "prettier.tslintIntegration": true,
@@ -38,27 +38,38 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.zoomLevel": 0,
   "cSpell.language": "en,en-GB",
-  "editor.wordWrapColumn": 100,
+  "editor.wordWrapColumn": 90,
   "window.titleBarStyle": "custom",
   "workbench.colorTheme": "Shades of Purple",
-  "editor.minimap.maxColumn": 100,
-  "workbench.statusBar.visible": false,
+  "editor.minimap.maxColumn": 90,
+  "workbench.statusBar.visible": true,
   "window.menuBarVisibility": "default",
-  "prettier.printWidth": 100,
+  "prettier.printWidth": 90,
   "editor.autoIndent": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.codeLens.enabled": false,
   "editor.renderFinalNewline": true,
-  "workbench.editor.enablePreview": false,
   "languageServerHaskell.useCustomHieWrapper": true,
   "languageServerHaskell.useCustomHieWrapperPath": "hie-wrapper",
   "cSpell.userWords": [
+    "Coto",
     "Interop",
     "esnext",
-    "optparse"
+    "gmail",
+    "grancalavera",
+    "graphql",
+    "leoncoto",
+    "optparse",
+    "typesafe"
   ],
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
-  }
+  },
+  "editor.fontSize": 16,
+  "cSpell.fixSpellingWithRenameProvider": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.wordWrap": "wordWrapColumn"
 }
