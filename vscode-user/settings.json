@@ -1,7 +1,7 @@
 {
   "workbench.startupEditor": "newUntitledFile",
   "editor.minimap.enabled": false,
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "breadcrumbs.enabled": true,
   "workbench.editor.showTabs": false,
   "editor.renderWhitespace": "boundary",
@@ -20,7 +20,6 @@
   "editor.rulers": [90],
   "files.trimFinalNewlines": true,
   "tslint.autoFixOnSave": true,
-  "prettier.tslintIntegration": true,
   "tslint.jsEnable": true,
   "editor.renderIndentGuides": false,
   "guides.active.gutter": true,
@@ -40,11 +39,10 @@
   "cSpell.language": "en,en-GB",
   "editor.wordWrapColumn": 90,
   "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "Shades of Purple",
+  "workbench.colorTheme": "Night Owl (No Italics)",
   "editor.minimap.maxColumn": 90,
   "workbench.statusBar.visible": true,
   "window.menuBarVisibility": "default",
-  "prettier.printWidth": 90,
   "editor.autoIndent": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
@@ -55,12 +53,14 @@
   "cSpell.userWords": [
     "Coto",
     "Interop",
+    "blueprintjs",
     "esnext",
     "gmail",
     "grancalavera",
     "graphql",
     "leoncoto",
     "optparse",
+    "typeorm",
     "typesafe"
   ],
   "[html]": {
@@ -71,5 +71,12 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.wordWrap": "wordWrapColumn"
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.useExperimentalGridLayout": true,
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }

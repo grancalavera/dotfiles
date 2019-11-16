@@ -27,7 +27,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-export UPDATE_ZSH_DAYS=1
+# export UPDATE_ZSH_DAYS=1
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -64,6 +64,7 @@ export UPDATE_ZSH_DAYS=1
 plugins=(
   git
   gitignore
+  yarn-autocompletions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -108,10 +109,13 @@ function vset {
   pactl set-sink-volume 0 "${VOL}%"
 }
 
-alias tm="cd ~/Desktop/the-maze"
-alias tml="cd ~/Desktop/the-maze/packages/maze-lib"
-alias tmu="cd ~/Desktop/the-maze/packages/maze-ui"
-alias tmf="cd ~/Desktop/the-maze/packages/maze-functions"
+alias ttt="cd ~/Desktop/ttt"
+alias ttta="cd ~/Desktop/ttt/ttt-api"
+alias tttc="cd ~/Desktop/ttt/ttt-client"
+alias ttts="cd ~/Desktop/ttt/ttt-server"
+alias tttt="cd ~/Desktop/ttt/ttt-core"
+
+alias lab="cd ~/Desktop/labyrinth"
 
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' -R '

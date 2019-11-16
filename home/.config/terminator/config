@@ -23,17 +23,6 @@
     icon_bell = False
     show_titlebar = False
     use_system_font = False
-  [[Belafonte Day]]
-    background_color = "#d5ccba"
-    copy_on_selection = True
-    cursor_color = "#45373c"
-    font = Ubuntu Mono 14
-    foreground_color = "#45373c"
-    icon_bell = False
-    palette = "#20111b:#be100e:#858162:#eaa549:#426a79:#97522c:#989a9c:#968c83:#5e5252:#be100e:#858162:#eaa549:#426a79:#97522c:#989a9c:#d5ccba"
-    rewrap_on_resize = False
-    show_titlebar = False
-    use_system_font = False
   [[Cobalt2]]
     background_color = "#1d1f21"
     copy_on_selection = True
@@ -43,12 +32,12 @@
     palette = "#000000:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#ffffff:#000000:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#ffffff"
     show_titlebar = False
   [[Solarized Dark Higher Contrast]]
-    background_color = "#001e27"
+    background_color = "#2d2d2d"
     copy_on_selection = True
-    cursor_color = "#f34b00"
-    foreground_color = "#9cc2c3"
+    cursor_color = "#cccccc"
+    foreground_color = "#cccccc"
     icon_bell = False
-    palette = "#002831:#d11c24:#6cbe6c:#a57706:#2176c7:#c61c6f:#259286:#eae3cb:#006488:#f5163b:#51ef84:#b27e28:#178ec8:#e24d8e:#00b39e:#fcf4dc"
+    palette = "#000000:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#ffffff:#000000:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#ffffff"
     show_titlebar = False
   [[SpaceGray]]
     background_color = "#20242d"
@@ -65,14 +54,6 @@
     foreground_color = "#ffffff"
     icon_bell = False
     palette = "#000000:#ff9da4:#d1f1a9:#ffeead:#bbdaff:#ebbbff:#99ffff:#ffffff:#000000:#ff9da4:#d1f1a9:#ffeead:#bbdaff:#ebbbff:#99ffff:#ffffff"
-    show_titlebar = False
-  [[Tomorrow Night Eighties]]
-    background_color = "#2d2d2d"
-    copy_on_selection = True
-    cursor_color = "#cccccc"
-    foreground_color = "#cccccc"
-    icon_bell = False
-    palette = "#000000:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#ffffff:#000000:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#ffffff"
     show_titlebar = False
   [[Violet Dark]]
     background_color = "#1c1d1f"
