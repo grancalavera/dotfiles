@@ -1,7 +1,7 @@
 {
   "workbench.startupEditor": "newUntitledFile",
   "editor.minimap.enabled": false,
-  "workbench.activityBar.visible": true,
+  "workbench.activityBar.visible": false,
   "breadcrumbs.enabled": true,
   "workbench.editor.showTabs": false,
   "editor.renderWhitespace": "boundary",
@@ -17,7 +17,7 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "editor.rulers": [90],
+  "editor.rulers": [80],
   "files.trimFinalNewlines": true,
   "tslint.autoFixOnSave": true,
   "tslint.jsEnable": true,
@@ -37,11 +37,10 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.zoomLevel": 0,
   "cSpell.language": "en,en-GB",
-  "editor.wordWrapColumn": 90,
   "window.titleBarStyle": "custom",
   "workbench.colorTheme": "Night Owl (No Italics)",
   "editor.minimap.maxColumn": 90,
-  "workbench.statusBar.visible": true,
+  "workbench.statusBar.visible": false,
   "window.menuBarVisibility": "default",
   "editor.autoIndent": false,
   "gitlens.currentLine.enabled": false,
@@ -60,8 +59,12 @@
     "graphql",
     "leoncoto",
     "optparse",
+    "pactl",
+    "poweroff",
+    "systemctl",
     "typeorm",
-    "typesafe"
+    "typesafe",
+    "xbacklight"
   ],
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
@@ -78,5 +81,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.useExperimentalGridLayout": true,
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "html.format.wrapLineLength": 80,
+  "prettier.trailingComma": "es5"
 }
