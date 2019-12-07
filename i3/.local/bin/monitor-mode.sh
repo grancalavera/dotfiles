@@ -13,7 +13,7 @@ function saveMonitorMode {
 function modeAll {
   xrandr \
     --output $INTERNAL_OUTPUT --auto --pos 0x1080\
-    --output $EXTERNAL_OUTPUT --auto --pos 1920x0
+    --output $EXTERNAL_OUTPUT --auto --pos -3840x0
   saveMonitorMode "ALL"
 }
 
