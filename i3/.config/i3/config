@@ -127,8 +127,6 @@ bindsym XF86Display exec --no-startup-id toggle-screens
 
 bindsym Control+$mod+l exec i3lock -i ~/.config/background -t
 
-bindsym Control+$mod+q exec --no-startup-id systemctl poweroff -i
-
 bar {
   position top
   status_command i3blocks -c ~/.config/i3/i3blocks.conf
