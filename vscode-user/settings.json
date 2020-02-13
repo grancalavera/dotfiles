@@ -1,9 +1,8 @@
 {
   "workbench.startupEditor": "newUntitledFile",
   "editor.minimap.enabled": false,
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "breadcrumbs.enabled": true,
-  "workbench.editor.showTabs": false,
   "editor.renderWhitespace": "boundary",
   "terminal.integrated.rendererType": "dom",
   "editor.tabSize": 2,
@@ -17,7 +16,7 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "editor.rulers": [80],
+  "editor.rulers": [90],
   "files.trimFinalNewlines": true,
   "tslint.autoFixOnSave": true,
   "tslint.jsEnable": true,
@@ -38,7 +37,7 @@
   "window.zoomLevel": 0,
   "cSpell.language": "en,en-GB",
   "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "Night Owl (No Italics)",
+  "workbench.colorTheme": "Shades of Purple",
   "editor.minimap.maxColumn": 90,
   "workbench.statusBar.visible": false,
   "window.menuBarVisibility": "default",
@@ -47,11 +46,10 @@
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.codeLens.enabled": false,
   "editor.renderFinalNewline": true,
-  "languageServerHaskell.useCustomHieWrapper": true,
-  "languageServerHaskell.useCustomHieWrapperPath": "hie-wrapper",
   "cSpell.userWords": [
     "Coto",
     "Interop",
+    "bimap",
     "blueprintjs",
     "esnext",
     "gmail",
@@ -80,8 +78,10 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.useExperimentalGridLayout": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "html.format.wrapLineLength": 80,
-  "prettier.trailingComma": "es5"
+  "html.format.wrapLineLength": 90,
+  "prettier.trailingComma": "es5",
+  "prettier.printWidth": 90,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.showTabs": false,
 }
