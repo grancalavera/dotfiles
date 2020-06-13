@@ -114,6 +114,7 @@ alias ttta="cd ~/Desktop/ttt/ttt-api"
 alias tttc="cd ~/Desktop/ttt/ttt-client"
 alias ttts="cd ~/Desktop/ttt/ttt-server"
 alias tttt="cd ~/Desktop/ttt/ttt-core"
+alias tttd="cd ~/Desktop/ttt/ttt-domain"
 
 alias lab="cd ~/Desktop/labyrinth"
 

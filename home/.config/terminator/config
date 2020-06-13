@@ -1,4 +1,5 @@
 [global_config]
+  always_split_with_profile = True
   enabled_plugins = TerminatorThemes, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   focus = system
   scroll_tabbar = True
@@ -31,6 +32,26 @@
     icon_bell = False
     palette = "#000000:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#ffffff:#000000:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#ffffff"
     show_titlebar = False
+  [[Glacier]]
+    background_color = "#0c1115"
+    copy_on_selection = True
+    cursor_color = "#6c6c6c"
+    font = Ubuntu Mono 14
+    foreground_color = "#ffffff"
+    icon_bell = False
+    palette = "#2e343c:#bd0f2f:#35a770:#fb9435:#1f5872:#bd2523:#778397:#ffffff:#404a55:#bd0f2f:#49e998:#fddf6e:#2a8bc1:#ea4727:#a0b6d3:#ffffff"
+    show_titlebar = False
+    use_system_font = False
+  [[Grass]]
+    background_color = "#13773d"
+    copy_on_selection = True
+    cursor_color = "#8c2800"
+    font = Ubuntu Mono 14
+    foreground_color = "#fff0a5"
+    icon_bell = False
+    palette = "#000000:#bb0000:#00bb00:#e7b000:#0000a3:#950062:#00bbbb:#bbbbbb:#555555:#bb0000:#00bb00:#e7b000:#0000bb:#ff55ff:#55ffff:#ffffff"
+    show_titlebar = False
+    use_system_font = False
   [[Solarized Dark Higher Contrast]]
     background_color = "#2d2d2d"
     copy_on_selection = True
@@ -39,6 +60,16 @@
     icon_bell = False
     palette = "#000000:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#ffffff:#000000:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#ffffff"
     show_titlebar = False
+  [[Solarized Light]]
+    background_color = "#eee8d5"
+    copy_on_selection = True
+    cursor_color = "#002b36"
+    font = Ubuntu Mono 14
+    foreground_color = "#002b36"
+    icon_bell = False
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    show_titlebar = False
+    use_system_font = False
   [[SpaceGray]]
     background_color = "#20242d"
     copy_on_selection = True
