@@ -24,6 +24,26 @@
     icon_bell = False
     show_titlebar = False
     use_system_font = False
+  [[Belafonte Day]]
+    background_color = "#d5ccba"
+    copy_on_selection = True
+    cursor_color = "#45373c"
+    font = Ubuntu Mono 14
+    foreground_color = "#45373c"
+    icon_bell = False
+    palette = "#20111b:#be100e:#858162:#eaa549:#426a79:#97522c:#989a9c:#968c83:#5e5252:#be100e:#858162:#eaa549:#426a79:#97522c:#989a9c:#d5ccba"
+    show_titlebar = False
+    use_system_font = False
+  [[BirdsOfParadise]]
+    background_color = "#2a1f1d"
+    copy_on_selection = True
+    cursor_color = "#573d26"
+    font = Ubuntu Mono 14
+    foreground_color = "#e0dbb7"
+    icon_bell = False
+    palette = "#573d26:#be2d26:#6ba18a:#e99d2a:#5a86ad:#ac80a6:#74a6ad:#e0dbb7:#9b6c4a:#e84627:#95d8ba:#d0d150:#b8d3ed:#d19ecb:#93cfd7:#fff9d5"
+    show_titlebar = False
+    use_system_font = False
   [[Cobalt2]]
     background_color = "#1d1f21"
     copy_on_selection = True
@@ -40,6 +60,16 @@
     foreground_color = "#ffffff"
     icon_bell = False
     palette = "#2e343c:#bd0f2f:#35a770:#fb9435:#1f5872:#bd2523:#778397:#ffffff:#404a55:#bd0f2f:#49e998:#fddf6e:#2a8bc1:#ea4727:#a0b6d3:#ffffff"
+    show_titlebar = False
+    use_system_font = False
+  [[Grape]]
+    background_color = "#171423"
+    copy_on_selection = True
+    cursor_color = "#a288f7"
+    font = Ubuntu Mono 14
+    foreground_color = "#9f9fa1"
+    icon_bell = False
+    palette = "#2d283f:#ed2261:#1fa91b:#8ddc20:#487df4:#8d35c9:#3bdeed:#9e9ea0:#59516a:#f0729a:#53aa5e:#b2dc87:#a9bcec:#ad81c2:#9de3eb:#a288f7"
     show_titlebar = False
     use_system_font = False
   [[Grass]]

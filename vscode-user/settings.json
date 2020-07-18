@@ -1,7 +1,7 @@
 {
   "workbench.startupEditor": "newUntitledFile",
   "editor.minimap.enabled": false,
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "breadcrumbs.enabled": true,
   "editor.renderWhitespace": "boundary",
   "terminal.integrated.rendererType": "dom",
@@ -101,5 +101,5 @@
   "explorer.confirmDragAndDrop": false,
   "workbench.editor.scrollToSwitchTabs": true,
   "FSharp.useSdkScripts": true,
-  "workbench.colorTheme": "Noctis"
+  "workbench.colorTheme": "Shades of Purple"
 }
