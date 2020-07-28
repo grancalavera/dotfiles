@@ -1,11 +1,5 @@
 @import "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
 
-configuration {
-  combi-modi: "window,drun,run";
-  font: "Ubuntu Mono 14";
-  modi: "combi";
-}
-
 inputbar {
   children: [entry, case-indicator];
   spacing: 0;
