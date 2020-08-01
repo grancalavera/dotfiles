@@ -22,6 +22,7 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+  "files.autoGuessEncoding": true,
   "editor.rulers": [90],
   "files.trimFinalNewlines": true,
   "tslint.autoFixOnSave": true,

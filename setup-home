@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 set -e
-
-sudo -v
-stow -Rv -t ~ home i3
-sudo stow -Rv -t /etc etc
+# https://www.youtube.com/watch?v=zhdO46oqeRw
+stow -Rv -t ~ home i3 regolith

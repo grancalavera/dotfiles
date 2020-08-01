@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-gsettings set org.gnome.desktop.background picture-uri ""
-
-# https://en.wikipedia.org/wiki/Payne%27s_grey
-gsettings set org.gnome.desktop.background primary-color '#536878'
