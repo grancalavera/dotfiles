@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -e
 # https://www.youtube.com/watch?v=zhdO46oqeRw
-stow -Rv -t ~ home i3 regolith
+stow -Rv -t ~ home i3
