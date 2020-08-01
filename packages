@@ -8,7 +8,6 @@ i3blocks
 libicu-dev
 libtinfo-dev
 meld
-pip3
 rofi
 stow
 terminator
