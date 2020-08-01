@@ -3,6 +3,7 @@
   scroll_tabbar = True
   enabled_plugins = TerminatorThemes, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   always_split_with_profile = True
+  scrollbar_position="disabled"
 [keybindings]
 [profiles]
   [[default]]
