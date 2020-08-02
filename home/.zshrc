@@ -97,28 +97,32 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export EDITOR="code-insiders -w"
+export EDITOR="code -w"
 export PATH=~/.local/bin:~/.npm-packages/bin::~/.yarn-packages/bin:$PATH
 
-alias vmute="pactl set-sink-mute 0 toggle"
-alias vup="pactl set-sink-volume 0 +5%"
-alias vdown="pactl set-sink-volume 0 -5%"
+SINK=alsa_output.pci-0000_00_1f.3.analog-stereo
+
+alias vmute="pactl set-sink-mute $SINK toggle"
+alias vup="pactl set-sink-volume $SINK +5%"
+alias vdown="pactl set-sink-volume $SINK -5%"
+
 function vset {
   local VOL=$1
-  pactl set-sink-mute 0 0
-  pactl set-sink-volume 0 "${VOL}%"
+  pactl set-sink-mute "${SINK}" 0
+  pactl set-sink-volume "${SINK}" "${VOL}%"
 }
 
-alias ttt="cd ~/Desktop/ttt"
-alias ttta="cd ~/Desktop/ttt/ttt-api"
-alias tttc="cd ~/Desktop/ttt/ttt-client"
-alias ttts="cd ~/Desktop/ttt/ttt-server"
-alias tttt="cd ~/Desktop/ttt/ttt-core"
-alias tttd="cd ~/Desktop/ttt/ttt-domain"
+alias works="cd ~/works"
+alias ttt="cd ~/works/ttt"
+alias ttta="cd ~/works/ttt/ttt-api"
+alias tttc="cd ~/works/ttt/ttt-client"
+alias ttts="cd ~/works/ttt/ttt-server"
+alias tttt="cd ~/works/ttt/ttt-core"
+alias tttd="cd ~/works/ttt/ttt-domain"
 
-alias lab="cd ~/Desktop/labyrinth"
-alias mz="cd ~/Desktop/mazes"
-alias recho="cd ~/Desktop/redis-echo"
+alias lab="cd ~/works/labyrinth"
+alias mz="cd ~/works/mazes"
+alias recho="cd ~/works/redis-echo"
 
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' -R '

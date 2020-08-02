@@ -2,12 +2,15 @@ arandr
 blueman
 curl
 feh
+gtk-chtheme
 htop
 i3
 i3blocks
 libicu-dev
 libtinfo-dev
+lxappearance
 meld
+qt4-qtconfig
 rofi
 stow
 terminator
