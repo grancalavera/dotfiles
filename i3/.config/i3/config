@@ -173,3 +173,7 @@ for_window [class="Nautilus"] floating enable
 
 # screenshots
 bindsym $mod+Shift+s exec --no-startup-id gnome-screenshot -ia
+
+# moving workspaces to monitors
+bindsym $mod+Control+j move workspace to output left
+bindsym $mod+Control+semicolon move workspace to output right
