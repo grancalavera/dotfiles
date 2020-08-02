@@ -3,7 +3,6 @@
   scroll_tabbar = True
   enabled_plugins = TerminatorThemes, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   always_split_with_profile = True
-  scrollbar_position="disabled"
 [keybindings]
 [profiles]
   [[default]]
@@ -13,7 +12,6 @@
     font = Ubuntu Mono 14
     foreground_color = "#839496"
     show_titlebar = False
-    use_system_font = False
     copy_on_selection = True
   [[Belafonte Day]]
     icon_bell = False
