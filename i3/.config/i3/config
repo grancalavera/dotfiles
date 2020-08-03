@@ -143,7 +143,7 @@ exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 exec_always feh --bg-tile ~/.config/background
 exec_always --no-startup-id ~/.config/screen-layout.sh
 
-set $internalTouchpad "SynPS/2 Synaptics TouchPad"
+set $internalTouchpad "Synaptics TM3381-002"
 
 set $tapping "Tapping Enabled"
 set $naturalScrolling "Natural Scrolling Enabled"
