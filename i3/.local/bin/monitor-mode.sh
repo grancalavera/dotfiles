@@ -12,14 +12,14 @@ function saveMonitorMode {
 
 function modeAll {
   xrandr \
-    --output $INTERNAL_OUTPUT --auto --pos 0x1080\
-    --output $EXTERNAL_OUTPUT --auto --pos -3840x0
+    --output $INTERNAL_OUTPUT --auto --pos 0x1080 \
+    --output $EXTERNAL_OUTPUT --auto --pos -3840x0 --primary
   saveMonitorMode "ALL"
 }
 
 function modeInternal {
   xrandr \
-    --output $INTERNAL_OUTPUT --auto \
+    --output $INTERNAL_OUTPUT --auto --primary \
     --output $EXTERNAL_OUTPUT --off
   saveMonitorMode "INTERNAL"
 }
@@ -27,13 +27,13 @@ function modeInternal {
 function modeExternal {
   xrandr \
     --output $INTERNAL_OUTPUT --off \
-    --output $EXTERNAL_OUTPUT --auto
+    --output $EXTERNAL_OUTPUT --auto --primary
   saveMonitorMode "EXTERNAL"
 }
 
 function modeClones {
   xrandr \
-    --output $INTERNAL_OUTPUT --auto \
+    --output $INTERNAL_OUTPUT --auto --primary \
     --output $EXTERNAL_OUTPUT --auto --same-as $INTERNAL_OUTPUT
   saveMonitorMode "CLONES"
 }
