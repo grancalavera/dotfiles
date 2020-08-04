@@ -85,6 +85,7 @@ bindsym $mod+7 workspace $workspace7
 bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
 bindsym $mod+Shift+2 move container to workspace $workspace2
@@ -101,7 +102,7 @@ bindsym $mod+Shift+w reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-set $resizeStep 1
+set $resizeStep 10
 mode "resize" {
   bindsym j resize shrink width $resizeStep px or $resizeStep ppt
   bindsym k resize grow height $resizeStep px or $resizeStep ppt
@@ -116,14 +117,12 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+
 # http://wiki.linuxquestions.org/wiki/XF86_keyboard_symbols
-
-set $sink=alsa_output.pci-0000_00_1f.3.analog-stereo
-
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink -5%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink toggle
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute $sink toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 1 toggle
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 bindsym XF86Display exec --no-startup-id toggle-screens
@@ -141,27 +140,13 @@ bindsym $mod+d exec rofi -show combi
 exec "setxkbmap us_intl -option ctrl:nocaps -option compose:ralt"
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 exec_always feh --bg-tile ~/.config/background
-exec_always --no-startup-id ~/.config/screen-layout.sh
 
 set $internalTouchpad "Synaptics TM3381-002"
-
-set $tapping "Tapping Enabled"
-set $naturalScrolling "Natural Scrolling Enabled"
-set $tapDrag "Tapping Drag Enabled"
-set $tapDragLock "Tapping Drag Lock Enabled"
-set $accelSpeed "Accel Speed"
-
-set $tappingValue 1
-set $naturalScrollingValue 1
-set $tapDragValue 1
-set $tapDragLockValue 1
-set $accelSpeedValue 1.0
-
-exec_always --no-startup-id set-xinput $internalTouchpad $tapping $tappingValue
-exec_always --no-startup-id set-xinput $internalTouchpad $naturalScrolling $naturalScrollingValue
-exec_always --no-startup-id set-xinput $internalTouchpad $tapDrag $tapDragLockValue
-exec_always --no-startup-id set-xinput $internalTouchpad $tapDragLock $tapDragLockValue
-exec_always --no-startup-id set-xinput $internalTouchpad $accelSpeed $accelSpeedValue
+exec_always --no-startup-id set-xinput $internalTouchpad "Tapping Enabled" 1
+exec_always --no-startup-id set-xinput $internalTouchpad "Natural Scrolling Enabled" 1
+exec_always --no-startup-id set-xinput $internalTouchpad "Tapping Drag Enabled" 1
+exec_always --no-startup-id set-xinput $internalTouchpad "Tapping Drag Lock Enabled" 1
+exec_always --no-startup-id set-xinput $internalTouchpad "Accel Speed" 1.0
 
 exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
