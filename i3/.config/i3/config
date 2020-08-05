@@ -57,9 +57,6 @@ bindsym $mod+e layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
-
 # focus the parent container
 bindsym $mod+a focus parent
 
@@ -134,7 +131,7 @@ bar {
   status_command i3blocks -c ~/.config/i3/i3blocks.conf
 }
 
-bindsym $mod+d exec rofi -show combi
+bindsym $mod+space exec rofi -show combi
 
 # exec stuff
 exec "setxkbmap us_intl -option ctrl:nocaps -option compose:ralt"
