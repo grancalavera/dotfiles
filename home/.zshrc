@@ -123,6 +123,7 @@ alias tttd="cd ~/works/ttt/ttt-domain"
 alias lab="cd ~/works/labyrinth"
 alias mz="cd ~/works/mazes"
 alias recho="cd ~/works/redis-echo"
+alias open="xdg-open"
 
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
