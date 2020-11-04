@@ -99,7 +99,7 @@ bindsym $mod+Shift+w reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-set $resizeStep 10
+set $resizeStep 5
 mode "resize" {
   bindsym j resize shrink width $resizeStep px or $resizeStep ppt
   bindsym k resize grow height $resizeStep px or $resizeStep ppt
@@ -158,5 +158,9 @@ for_window [class="Nautilus"] floating enable
 bindsym $mod+Shift+s exec --no-startup-id gnome-screenshot -ia
 
 # moving workspaces to monitors
-bindsym $mod+Control+j move workspace to output left
-bindsym $mod+Control+semicolon move workspace to output right
+bindsym $mod+Control+Mod1+Shift+Left move workspace to output left
+bindsym $mod+Control+Mod1+Shift+Right move workspace to output right
+
+# cycling through workspaces
+bindsym $mod+Control+Mod1+Left workspace prev
+bindsym $mod+Control+Mod1+Right workspace next
