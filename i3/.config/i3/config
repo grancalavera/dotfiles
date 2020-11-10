@@ -135,7 +135,8 @@ bar {
 bindsym $mod+space exec rofi -show combi
 
 # exec stuff
-exec "setxkbmap us_intl -option ctrl:nocaps -option compose:ralt"
+# exec "setxkbmap us_intl -option ctrl:nocaps -option compose:ralt"
+exec "setxkbmap us -option ctrl:nocaps -option compose:ralt"
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 exec_always feh --bg-tile ~/.config/background
 
