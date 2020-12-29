@@ -60,6 +60,7 @@
     "Monoid",
     "Semigroup",
     "Unvalidated",
+    "Upsert",
     "Validatable",
     "bimap",
     "blueprintjs",
@@ -102,8 +103,17 @@
   "explorer.confirmDragAndDrop": false,
   "workbench.editor.scrollToSwitchTabs": true,
   "FSharp.useSdkScripts": true,
-  "workbench.colorTheme": "Shades of Purple",
+  "workbench.colorTheme": "Noctis Obscuro",
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "jupyter.textOutputLimit": 0,
+  "jupyter.askForKernelRestart": false,
+  "workbench.sideBar.location": "right",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
