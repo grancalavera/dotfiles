@@ -103,7 +103,7 @@
   "explorer.confirmDragAndDrop": false,
   "workbench.editor.scrollToSwitchTabs": true,
   "FSharp.useSdkScripts": true,
-  "workbench.colorTheme": "Noctis Obscuro",
+  "workbench.colorTheme": "Shades of Purple",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
