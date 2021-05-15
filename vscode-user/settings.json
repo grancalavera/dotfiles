@@ -41,7 +41,6 @@
   "files.autoSave": "onFocusChange",
   "editor.formatOnSave": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.zoomLevel": 0,
   "cSpell.language": "en,en-GB",
   "window.titleBarStyle": "custom",
   "editor.minimap.maxColumn": 90,
@@ -71,6 +70,7 @@
     "kleisli",
     "leoncoto",
     "multiselect",
+    "octokit",
     "optparse",
     "pactl",
     "poweroff",
@@ -78,12 +78,12 @@
     "systemctl",
     "typeorm",
     "typesafe",
-    "xbacklight"
+    "xbacklight",
+    "zustand"
   ],
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "editor.fontSize": 16,
   "cSpell.fixSpellingWithRenameProvider": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -114,6 +114,15 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "\"Fira Code\"",
+  "editor.find.addExtraSpaceOnTop": false,
+  "editor.fontLigatures": true,
+  "gitlens.advanced.messages": {
+    "suppressRebaseSwitchToTextWarning": true
+  },
+  "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

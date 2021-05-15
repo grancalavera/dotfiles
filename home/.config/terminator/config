@@ -10,7 +10,7 @@
     icon_bell = False
     background_color = "#002b36"
     cursor_color = "#aaaaaa"
-    font = Ubuntu Mono 14
+    font = Fira Code weight=453 11
     foreground_color = "#839496"
     show_titlebar = False
     scrollbar_position = hidden
