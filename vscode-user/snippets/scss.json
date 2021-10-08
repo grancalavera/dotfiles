@@ -1,0 +1,13 @@
+{
+	"BEM Block": {
+		"prefix": "bem",
+		"body": [
+      "@import \"../app/bem.scss\";",
+      "",
+      "@include b(\"$1\") {",
+        "  $2",
+      "}"
+		],
+		"description": "BEM Block "
+  }
+}
