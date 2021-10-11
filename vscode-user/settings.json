@@ -138,6 +138,6 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 1,
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "window.zoomLevel": 0.5
 }

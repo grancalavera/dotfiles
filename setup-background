@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# https://askubuntu.com/questions/1272120/ubuntu-20-04-change-background-to-solid-colour
+# https://coolors.co/palettes/trending
+
+gsettings set org.gnome.desktop.background picture-uri ""
+gsettings set org.gnome.desktop.background primary-color "#253237"
