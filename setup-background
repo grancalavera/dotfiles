@@ -3,5 +3,7 @@
 # https://askubuntu.com/questions/1272120/ubuntu-20-04-change-background-to-solid-colour
 # https://coolors.co/palettes/trending
 
+GREENISH_GREEN="#70a9a1"
+
 gsettings set org.gnome.desktop.background picture-uri ""
-gsettings set org.gnome.desktop.background primary-color "#253237"
+gsettings set org.gnome.desktop.background primary-color $GREENISH_GREEN
