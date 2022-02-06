@@ -141,5 +141,6 @@
   },
   "workbench.iconTheme": "vscode-icons",
   "workbench.sideBar.location": "right",
-  "gitlens.mode.active": "zen"
+  "gitlens.mode.active": "zen",
+  "window.zoomLevel": 2
 }
