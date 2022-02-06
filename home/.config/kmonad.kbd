@@ -25,25 +25,30 @@
 )
 
 (defalias
-  vcm C-S-p
-  vcf C-p
+  vcm C-S-p ;; vscode command
+  vfi C-p   ;; vscode files
   wsu M-pgup
   wsd M-pgdn
-  a (tap-hold-next-release 350 a (tap-next a (layer-toggle move-lines-change-editor-focus)))
-  s (tap-hold-next-release 350 s (tap-next s (layer-toggle copy-line-and-modify-selection)))
-  d (tap-hold-next-release 350 d (tap-next d (layer-toggle select)))
-  f (tap-hold-next-release 350 f (tap-next f (layer-toggle arrows)))
-  g (tap-hold-next-release 350 g (tap-next g (layer-toggle hop)))
+  uln M-spc ;; ulauncher
+
+  r (tap-hold-next-release 350 r (tap-next XX (layer-toggle cursors)))
+  a (tap-hold-next-release 350 a (tap-next XX (layer-toggle move-lines-change-editor-focus)))
+  s (tap-hold-next-release 350 s (tap-next XX (layer-toggle copy-line-and-modify-selection)))
+  d (tap-hold-next-release 350 d (tap-next XX (layer-toggle select)))
+  f (tap-hold-next-release 350 f (tap-next XX (layer-toggle arrows)))
+  g (tap-hold-next-release 350 g (tap-next XX (layer-toggle hop)))
+  v (tap-hold-next-release 350 v (tap-next XX (layer-toggle by-word-and-scroll)))
+  z (tap-hold-next-release 350 z (tap-next XX (layer-toggle delete)))
 )
 
-(deflayer qwerty
+(deflayer next-of-kin
   esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  home  end del
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  tab  q    w    e    @r   t    y    u    i    o    p    [    ]    \
   lctl @a   @s   @d   @f   @g   h    j    k    l    ;    '    \    ret
-  lsft 102d z    x    c    v    b    n    m    ,    .    /         rsft
-  wkup lctl lmet lalt           spc            ralt prnt rctl @wsu up   @wsd
-                                                              left down rght
+  lsft 102d @z   x    c    @v   b    n    m    ,    .    /         rsft
+  wkup lctl lmet @vfi           spc            @vcm prnt rctl pgup @wsu pgdn
+                                                              left @wsd @uln
 )
 
 (deflayer arrows
@@ -112,6 +117,55 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    @fel @mld @mlu @fer _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _         _
+  _    _    _    _              _              _    _    _    _    _    _
+                                                              _    _    _
+)
+
+(defalias
+  crb C-S-down  ;; add cursor below
+  cra C-S-up    ;; add cursor above
+)
+
+(deflayer cursors
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    @crb @cra _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _         _
+  _    _    _    _              _              _    _    _    _    _    _
+                                                              _    _    _
+)
+
+(defalias
+  wdl C-left  ;; move left by word
+  scd C-down  ;; scroll down
+  scu C-up    ;; scroll up
+  wdr C-rght  ;; move right by word
+)
+
+(deflayer by-word-and-scroll
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    @wdl @scd @scu @wdr _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _         _
+  _    _    _    _              _              _    _    _    _    _    _
+                                                              _    _    _
+)
+
+(defalias
+  dar C-S-A-M-del
+  dwr C-del
+  dwl C-bspc
+  dal C-S-A-M-bspc
+)
+
+(deflayer delete
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    @dal @dwl @dwr @dar _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _         _
   _    _    _    _              _              _    _    _    _    _    _
                                                               _    _    _
