@@ -1,0 +1,19 @@
+{
+  "New blank layer": {
+    "scope": "kmonad",
+    "prefix": "layer",
+    "body": [
+      "(deflayer $1",
+      "  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _",
+      "  _    _    _    _    _    _    _    _    _    _    _    _    _    _",
+      "  _    _    _    _    _    _    _    _    _    _    _    _    _    _",
+      "  _    _    _    _    _    _    _    _    _    _    _    _    _    _",
+      "  _    _    _    _    _    _    _    _    _    _    _    _         _",
+      "  _    _    _    _              _              _    _    _    _    _    _",
+      "                                                              _    _    _",
+      ")"
+    ],
+    "description": "New blank kmonad layer"
+  }
+}
+>

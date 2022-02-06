@@ -1,7 +1,6 @@
 {
   "workbench.startupEditor": "newUntitledFile",
   "editor.minimap.enabled": false,
-  "workbench.activityBar.visible": true,
   "breadcrumbs.enabled": true,
   "editor.renderWhitespace": "boundary",
   "terminal.integrated.rendererType": "dom",
@@ -44,7 +43,6 @@
   "cSpell.language": "en,en-GB",
   "window.titleBarStyle": "custom",
   "editor.minimap.maxColumn": 90,
-  "workbench.statusBar.visible": true,
   "window.menuBarVisibility": "toggle",
   "editor.autoIndent": "none",
   "gitlens.currentLine.enabled": false,
@@ -59,6 +57,7 @@
     "Coto",
     "Droppable",
     "esnext",
+    "fontsource",
     "freetrade",
     "gmail",
     "grancalavera",
@@ -83,6 +82,7 @@
     "Unvalidated",
     "Upsert",
     "Validatable",
+    "VITE",
     "xbacklight",
     "zustand"
   ],
@@ -139,7 +139,7 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.sideBar.location": "right",
   "workbench.iconTheme": "vscode-icons",
-  "window.zoomLevel": 0.6
+  "workbench.sideBar.location": "right",
+  "gitlens.mode.active": "zen"
 }
