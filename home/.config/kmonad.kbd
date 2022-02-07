@@ -30,6 +30,11 @@
   wsu M-pgup
   wsd M-pgdn
   uln M-spc ;; ulauncher
+  vtm C-`
+  ved #(C-k C-up)
+
+  normo (layer-add normo)
+  nok (layer-rem normo)
 
   r (tap-hold-next-release 350 r (tap-next XX (layer-toggle cursors)))
   a (tap-hold-next-release 350 a (tap-next XX (layer-toggle move-lines-change-editor-focus)))
@@ -47,8 +52,19 @@
   tab  q    w    e    @r   t    y    u    i    o    p    [    ]    \
   lctl @a   @s   @d   @f   @g   h    j    k    l    ;    '    \    ret
   lsft 102d @z   x    c    @v   b    n    m    ,    .    /         rsft
-  wkup lctl lmet @vfi           spc            @vcm prnt rctl pgup @wsu pgdn
+  wkup @ved lmet @vfi           spc            @vcm prnt @vtm pgup @wsu @normo
                                                               left @wsd @uln
+)
+
+
+(deflayer normo
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  home  end del
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    \    ret
+  lsft 102d z    x    c    v    b    n    m    ,    .    /         rsft
+  wkup lctl lmet lalt           spc            ralt prnt rctl pgup up   @nok
+                                                              left down rght
 )
 
 (deflayer arrows
