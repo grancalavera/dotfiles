@@ -1,6 +1,0 @@
-@import "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
-
-inputbar {
-  children: [entry, case-indicator];
-  spacing: 0;
-}

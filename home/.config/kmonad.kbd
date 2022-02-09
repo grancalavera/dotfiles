@@ -20,22 +20,27 @@
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps a    s    d    f    g    h    j    k    l    ;    '    \    ret
   lsft 102d z    x    c    v    b    n    m    ,    .    /         rsft
-  wkup lctl lmet lalt           spc            ralt prnt rctl pgup up   pgdn
+  wkup lctl lmet lalt           spc            ralt sys  rctl pgup up   pgdn
                                                               left down rght
 )
 
 (defalias
-  vcm C-S-p ;; vscode command
-  vfi C-p   ;; vscode files
-  wsu M-pgup
-  wsd M-pgdn
-  uln M-spc ;; ulauncher
-  vtm C-`
-  ved #(C-k C-up)
+  vcm C-S-p     ;; vscode command
+  vfi C-p       ;; vscode files
+  vtm C-`       ;; vscode focus terminal
+  ved #(C-k e)  ;; vscode focus editor
+  ori S-A-o     ;; vscode organise imports
+  wsu M-pgup    ;; move to workspace above
+  wsd M-pgdn    ;; move to workspace below
+  uln M-spc     ;; ulauncher
+  ssh S-C-A-M-s ;; screenshot
+  scp S-C-A-M-p ;; screen capture
 
   normo (layer-add normo)
   nok (layer-rem normo)
 
+  q (tap-hold-next-release 350 q (tap-next XX (layer-toggle editor-navigation)))
+  w (tap-hold-next-release 350 w (tap-next XX (layer-toggle editor-organisation)))
   r (tap-hold-next-release 350 r (tap-next XX (layer-toggle cursors)))
   a (tap-hold-next-release 350 a (tap-next XX (layer-toggle move-lines-change-editor-focus)))
   s (tap-hold-next-release 350 s (tap-next XX (layer-toggle copy-line-and-modify-selection)))
@@ -49,11 +54,11 @@
 (deflayer next-of-kin
   esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  home  end del
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    @r   t    y    u    i    o    p    [    ]    \
+  tab  @q   @w   e    @r   t    y    u    i    o    p    [    ]    \
   lctl @a   @s   @d   @f   @g   h    j    k    l    ;    '    \    ret
   lsft 102d @z   x    c    @v   b    n    m    ,    .    /         rsft
-  wkup @ved lmet @vfi           spc            @vcm prnt @vtm pgup @wsu @normo
-                                                              left @wsd @uln
+  wkup lmet @ori @vfi           spc            @vcm @vtm @mer @scp @wsu @normo
+                                                              @ssh @wsd @uln
 )
 
 
@@ -63,7 +68,7 @@
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps a    s    d    f    g    h    j    k    l    ;    '    \    ret
   lsft 102d z    x    c    v    b    n    m    ,    .    /         rsft
-  wkup lctl lmet lalt           spc            ralt prnt rctl pgup up   @nok
+  wkup lctl lmet lalt           spc            ralt sys rctl pgup up   @nok
                                                               left down rght
 )
 
@@ -122,17 +127,15 @@
 )
 
 (defalias
-  fel #(C-k C-left) ;; focus editor left
   mld A-down        ;; move line down
   mlu A-up          ;; move line up
-  fer #(C-k C-rght) ;; focus editor right
 )
 
 (deflayer move-lines-change-editor-focus
   _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    @fel @mld @mlu @fer _    _    _    _
+  _    _    _    _    _    _    _    @mld @mlu _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _         _
   _    _    _    _              _              _    _    _    _    _    _
                                                               _    _    _
@@ -182,6 +185,38 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    @dal @dwl @dwr @dar _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _         _
+  _    _    _    _              _              _    _    _    _    _    _
+                                                              _    _    _
+)
+
+(defalias
+  fel #(C-k C-left) ;; focus editor left
+  fed #(C-k C-down) ;; focus editor down
+  feu #(C-k C-up)   ;; focus editor up
+  fer #(C-k C-rght) ;; focus editor right
+)
+
+(deflayer editor-navigation
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    @fel @fed @feu @fer _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _         _
+  _    _    _    _              _              _    _    _    _    _    _
+                                                              _    _    _
+)
+
+(defalias
+  mel #(@vcm m o v e spc  e d i t o r spc i n t o spc l e f t spc g r o u p ret)
+  mer #(@vcm m o v e spc  e d i t o r spc i n t o spc r i g h t spc g r o u p ret)
+)
+
+(deflayer editor-organisation
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    @mel _    _    @mer _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _         _
   _    _    _    _              _              _    _    _    _    _    _
                                                               _    _    _
