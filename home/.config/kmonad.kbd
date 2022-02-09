@@ -1,9 +1,3 @@
-;; A compose key (sometimes called multi key) is a key on a computer keyboard that
-;; indicates that the following (usually 2 or more) keystrokes trigger the insertion
-;; of an alternate character, typically a precomposed character or a symbol.
-;; For instance, typing Compose followed by ~ and then n will insert ñ.
-;; https://en.wikipedia.org/wiki/Compose_key
-
 (defcfg
   input  (device-file "/dev/input/by-path/platform-i8042-serio-0-event-kbd")
   output (uinput-sink "kmonad-output" "/bin/sleep 1 && /usr/bin/setxkbmap -option compose:ralt")
@@ -12,7 +6,6 @@
   fallthrough true
   allow-cmd true
 )
-
 
 (defsrc
   esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  home  end del
@@ -36,6 +29,9 @@
   ssh S-C-A-M-s ;; screenshot
   scp S-C-A-M-p ;; screen capture
 
+  undo C-z
+  redo C-y
+
   normo (layer-add normo)
   nok (layer-rem normo)
 
@@ -52,12 +48,12 @@
 )
 
 (deflayer next-of-kin
-  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  home  end del
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  @undo @redo @ori
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  @q   @w   e    @r   t    y    u    i    o    p    [    ]    \
   lctl @a   @s   @d   @f   @g   h    j    k    l    ;    '    \    ret
   lsft 102d @z   x    c    @v   b    n    m    ,    .    /         rsft
-  wkup lmet @ori @vfi           spc            @vcm @vtm @mer @scp @wsu @normo
+  wkup lmet @vfi del            spc            bspc @vcm @vtm @scp @wsu @normo
                                                               @ssh @wsd @uln
 )
 
@@ -68,7 +64,7 @@
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps a    s    d    f    g    h    j    k    l    ;    '    \    ret
   lsft 102d z    x    c    v    b    n    m    ,    .    /         rsft
-  wkup lctl lmet lalt           spc            ralt sys rctl pgup up   @nok
+  wkup lctl lmet lalt           spc            ralt sys rctl  pgup up   @nok
                                                               left down rght
 )
 
@@ -127,8 +123,8 @@
 )
 
 (defalias
-  mld A-down        ;; move line down
-  mlu A-up          ;; move line up
+  mld A-down  ;; move line down
+  mlu A-up    ;; move line up
 )
 
 (deflayer move-lines-change-editor-focus
@@ -209,6 +205,8 @@
 
 (defalias
   mel #(@vcm m o v e spc  e d i t o r spc i n t o spc l e f t spc g r o u p ret)
+  meb #(@vcm m o v e spc  e d i t o r spc i n t o spc g r o u p spc b e l o w ret)
+  mea #(@vcm m o v e spc  e d i t o r spc i n t o spc g r o u p spc a b o v e ret)
   mer #(@vcm m o v e spc  e d i t o r spc i n t o spc r i g h t spc g r o u p ret)
 )
 
@@ -216,7 +214,7 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    @mel _    _    @mer _    _    _    _
+  _    _    _    _    _    _    @mel @meb @mea @mer _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _         _
   _    _    _    _              _              _    _    _    _    _    _
                                                               _    _    _
