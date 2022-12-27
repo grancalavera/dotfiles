@@ -10,7 +10,7 @@
     icon_bell = False
     background_color = "#002b36"
     cursor_color = "#aaaaaa"
-    font = Fira Code weight=453 12
+    font = Fira Code weight=453 14
     foreground_color = "#839496"
     show_titlebar = False
     scrollbar_position = hidden

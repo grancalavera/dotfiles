@@ -1,11 +1,9 @@
 export ZSH="/home/grancalavera/.oh-my-zsh"
-ZSH_THEME="agnoster"
+ZSH_THEME="edvardm"
 
 plugins=(
   git
   gitignore
-  yarn-autocompletions
-  yarn
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -13,13 +11,7 @@ source $ZSH/oh-my-zsh.sh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 export EDITOR="code -w"
-export PATH=~/.local/bin:~/.npm-packages/bin::~/.yarn-packages/bin:$PATH
-
-SINK=alsa_output.pci-0000_00_1f.3.analog-stereo
-
-alias vmute="pactl set-sink-mute $SINK toggle"
-alias vup="pactl set-sink-volume $SINK +5%"
-alias vdown="pactl set-sink-volume $SINK -5%"
+export PATH=~/.local/bin:~/.npm-packages/bin:$PATH
 
 function vset {
   local VOL=$1
@@ -43,12 +35,19 @@ alias open="xdg-open"
 alias qn="cd ~/works/quiet-notes"
 alias qnw="cd ~/works/quiet-notes/quiet-notes-web"
 alias qnf="cd ~/works/quiet-notes/quiet-notes-functions"
+alias qnt="cd ~/works/quiet-notes/quiet-notes-tools"
+alias qnl="cd ~/works/quiet-notes/quiet-notes-lib"
+
+alias p="pnpm"
+alias t="pnpm typecheck"
 
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -f "/home/grancalavera/.ghcup/env" ] && source "/home/grancalavera/.ghcup/env" # ghcup-env
+
+# pnpm
+export PNPM_HOME="/home/grancalavera/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end

@@ -3,7 +3,6 @@
   "editor.minimap.enabled": false,
   "breadcrumbs.enabled": true,
   "editor.renderWhitespace": "boundary",
-  "terminal.integrated.rendererType": "dom",
   "editor.tabSize": 2,
   "files.exclude": {
     "**/.git": true,
@@ -22,11 +21,10 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.autoGuessEncoding": true,
-  "editor.rulers": [90],
+  "editor.rulers": [80],
   "files.trimFinalNewlines": true,
   "tslint.autoFixOnSave": true,
   "tslint.jsEnable": true,
-  "editor.renderIndentGuides": false,
   "guides.active.gutter": true,
   "cSpell.ignoreWords": [
     "unmount",
@@ -42,7 +40,7 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "cSpell.language": "en,en-GB",
   "window.titleBarStyle": "custom",
-  "editor.minimap.maxColumn": 90,
+  "editor.minimap.maxColumn": 80,
   "window.menuBarVisibility": "toggle",
   "editor.autoIndent": "none",
   "gitlens.currentLine.enabled": false,
@@ -101,15 +99,14 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "html.format.wrapLineLength": 90,
   "prettier.trailingComma": "es5",
-  "prettier.printWidth": 90,
+  "prettier.printWidth": 80,
   "workbench.editor.highlightModifiedTabs": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "workbench.editor.scrollToSwitchTabs": true,
   "FSharp.useSdkScripts": true,
-  "workbench.colorTheme": "Shades of Purple",
+  "workbench.colorTheme": "Shades of Purple (Super Dark)",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -135,13 +132,23 @@
     "*": false,
     "yaml": false,
     "plaintext": false,
-    "markdown": false
+    "markdown": false,
+    "haskell": false
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.iconTheme": "vscode-icons",
-  "workbench.sideBar.location": "right",
   "gitlens.mode.active": "zen",
+  "editor.guides.indentation": false,
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "haskell.manageHLS": "GHCup",
+  // "haskell.formattingProvider": "stylish-haskell",
+  "[haskell]": {
+    "editor.defaultFormatter": "haskell.haskell"
+  },
   "window.zoomLevel": 1
 }

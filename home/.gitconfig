@@ -7,3 +7,5 @@
 	default = simple
 [diff]
 	tool = meld
+[init]
+	defaultBranch = main

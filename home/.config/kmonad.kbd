@@ -53,8 +53,8 @@
   tab  @q   @w   e    @r   t    y    u    i    o    p    [    ]    \
   lctl @a   @s   @d   @f   @g   h    j    k    l    ;    '    \    ret
   lsft 102d @z   x    c    @v   b    n    m    ,    .    /         rsft
-  wkup lmet @vfi del            spc            bspc @vcm @vtm @scp @wsu @normo
-                                                              @ssh @wsd @uln
+  wkup lmet @vfi del            spc            bspc @vcm @vtm @ssh @scp @normo
+                                                              @wsd @uln @wsu
 )
 
 
