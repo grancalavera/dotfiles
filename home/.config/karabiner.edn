@@ -1,0 +1,89 @@
+;; !  | means mandatory
+;; #  | means optional
+;; C  | left_command
+;; T  | left_control
+;; O  | left_option
+;; S  | left_shift
+;; F  | fn
+;; Q  | right_command
+;; W  | left_control
+;; E  | right_option
+;; R  | right_shift
+;; 
+;; !! | mandatory command + control + optional + shift (hyper)
+;; ## | optional any
+{ 
+ :simlayer-threshold 300
+ :simlayers {
+          :a_layer {:key :a}
+          :s_layer {:key :s} 
+          :d_layer {:key :d}
+          :f_layer {:key :f}
+          :g_layer {:key :g}
+          :r_layer {:key :r}
+          :v_layer {:key :v}
+          }
+ 
+ :main [
+        {:des "Control and escape to pinkie"
+         :rules [
+                 [{:key :##caps_lock} [:left_control] nil {:alone :escape}]
+                 ]}
+        
+        {:des "A Layer: left_option"
+         :rules [:a_layer
+                 [:h {:key :left_arrow :modi [:left_option]}]
+                 [:j {:key :down_arrow :modi [:left_option]}]
+                 [:k {:key :up_arrow :modi [:left_option]}]
+                 [:l {:key :right_arrow :modi [:left_option]}]
+                 ]}
+        
+        {:des "S Layer: left_shift+left_option"
+         :rules [:s_layer
+                 [:h {:key :left_arrow :modi [:left_shift :left_option]}]
+                 [:j {:key :down_arrow :modi [:left_shift :left_option]}]
+                 [:k {:key :up_arrow :modi [:left_shift :left_option]}]
+                 [:l {:key :right_arrow :modi [:left_shift :left_option]}]
+                 ]}
+        
+        {:des "D Layer: left_shift"
+         :rules [:d_layer
+                 [:h {:key :!Sleft_arrow}]
+                 [:j {:key :!Sdown_arrow}]
+                 [:k {:key :!Sup_arrow}]
+                 [:l {:key :!Sright_arrow}]
+                 ]}
+        
+        {:des "F Layer: arrow keys"
+         :rules [:f_layer 
+                 [:##h :left_arrow]
+                 [:##j :down_arrow]
+                 [:##k :up_arrow]
+                 [:##l :right_arrow]
+                 ]}
+        
+        {:des "G Layer"
+         :rules [:g_layer 
+                 [:##h {:key :a :modi :left_control}]
+                 [:j :##page_down]
+                 [:k :##page_up]
+                 [:l {:key :e :modi :left_control}]
+                 ]}
+        
+        {:des "R Layer: left_option+left_command" 
+         :rules [:r_layer
+                 [:h {:key :left_arrow :modi [:left_option :left_command]}]
+                 [:j {:key :down_arrow :modi [:left_option :left_command]}]
+                 [:k {:key :up_arrow :modi [:left_option :left_command]}]
+                 [:l {:key :right_arrow :modi [:left_option :left_command]}]
+                 ]}
+        
+        {:des "V Layer: left_shift+left_command+left_contol (meh)"
+         :rules [:v_layer
+                 [:h {:key :left_arrow :modi [:left_shift :left_command :left_control]}]
+                 [:j {:key :down_arrow :modi [:left_shift :left_command :left_control]}]
+                 [:k {:key :up_arrow :modi [:left_shift :left_command :left_control]}]
+                 [:l {:key :right_arrow :modi [:left_shift :left_command :left_control]}]
+                 ]}
+        
+        ]}
