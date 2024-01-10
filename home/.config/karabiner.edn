@@ -12,6 +12,13 @@
 ;;
 ;; !! | mandatory command + control + optional + shift (hyper)
 ;; ## | optional any
+
+;; com.microsoft.VSCode
+;; /Applications/Visual Studio Code.app/Contents/MacOS/Electron
+
+;; com.jetbrains.intellij
+;; /Applications/IntelliJ IDEA.app/Contents/MacOS/idea
+
 {
  :simlayer-threshold 300
  :simlayers {
@@ -23,7 +30,12 @@
           :r_layer {:key :r}
           :v_layer {:key :v}
           }
-
+ 
+ :applications { 
+                :code ["^com\\.microsoft\\.VSCode$"] 
+                :intellij ["^com\\.jetbrains\\.intellij$"]
+                }
+ 
  :main [
         {:des "Magic Keys"
          :rules [
@@ -34,23 +46,31 @@
                  ; meh to escape, organise imports if alone (make vscode specifig in the future)
                  [{:key :##escape} {:key :left_shift :modi [:left_control :left_option]} nil {:alone {:key :o :modi [:left_option :left_shift]}}]]}
 
-        {:des "A Layer: left_option"
+        {:des "A Layer"
          :rules [:a_layer
-                 [:h {:key :left_arrow :modi [:left_option]}]
-                 [:j {:key :down_arrow :modi [:left_option]}]
-                 [:k {:key :up_arrow :modi [:left_option]}]
-                 [:l {:key :right_arrow :modi [:left_option]}]
+                 [:h {:key :left_arrow :modi [:left_option]} :code]
+                 [:j {:key :down_arrow :modi [:left_option]} :code]
+                 [:k {:key :up_arrow :modi [:left_option]} :code]
+                 [:l {:key :right_arrow :modi [:left_option]} :code]
+
+                 [:h {:key :left_arrow :modi [:left_shift :left_option]} :intellij]
+                 [:j {:key :down_arrow :modi [:left_shift :left_option]} :intellij]   ;; move line down
+                 [:k {:key :up_arrow :modi [:left_shift :left_option]} :intellij]     ;; move line up
+                 [:l {:key :right_arrow :modi [:left_shift :left_option]} :intellij]
                  ]}
 
-        {:des "S Layer: left_shift+left_option"
+        {:des "S Layer"
          :rules [:s_layer
-                 [:h {:key :left_arrow :modi [:left_shift :left_option]}]
-                 [:j {:key :down_arrow :modi [:left_shift :left_option]}]
-                 [:k {:key :up_arrow :modi [:left_shift :left_option]}]
-                 [:l {:key :right_arrow :modi [:left_shift :left_option]}]
+                 [:h {:key :left_arrow :modi [:left_shift :left_option]} :code]
+                 [:j {:key :down_arrow :modi [:left_shift :left_option]} :code]  ;; copy line down
+                 [:k {:key :up_arrow :modi [:left_shift :left_option]} :code]    ;; copy line up
+                 [:l {:key :right_arrow :modi [:left_shift :left_option]} :code]
+
+                 [:j {:key :d :modi [:left_command]} :intellij]  ;; copy line down
+                 [:k {:key :up_arrow :modi [:left_shift :left_option]} :intellij]    ;; copy line up
                  ]}
 
-        {:des "D Layer: left_shift"
+        {:des "D Layer"
          :rules [:d_layer
                  [:h {:key :!Sleft_arrow}]
                  [:j {:key :!Sdown_arrow}]
@@ -58,7 +78,7 @@
                  [:l {:key :!Sright_arrow}]
                  ]}
 
-        {:des "F Layer: arrow keys"
+        {:des "F Layer"
          :rules [:f_layer
                  [:##h :left_arrow]
                  [:##j :down_arrow]
@@ -74,7 +94,7 @@
                  [:l {:key :e :modi :left_control}]
                  ]}
 
-        {:des "R Layer: left_option+left_command"
+        {:des "R Layer"
          :rules [:r_layer
                  [:h {:key :left_arrow :modi [:left_option :left_command]}]
                  [:j {:key :down_arrow :modi [:left_option :left_command]}]
@@ -82,7 +102,7 @@
                  [:l {:key :right_arrow :modi [:left_option :left_command]}]
                  ]}
 
-        {:des "V Layer: left_shift+left_command+left_contol (meh)"
+        {:des "V Layer"
          :rules [:v_layer
                  [:h {:key :left_arrow :modi [:left_shift :left_command :left_control]}]
                  [:j {:key :down_arrow :modi [:left_shift :left_command :left_control]}]
