@@ -30,12 +30,12 @@
           :r_layer {:key :r}
           :v_layer {:key :v}
           }
- 
- :applications { 
-                :code ["^com\\.microsoft\\.VSCode$"] 
+
+ :applications {
+                :code ["^com\\.microsoft\\.VSCode$"]
                 :intellij ["^com\\.jetbrains\\.intellij$"]
                 }
- 
+
  :main [
         {:des "Magic Keys"
          :rules [
@@ -70,29 +70,29 @@
                  [:k {:key :up_arrow :modi [:left_shift :left_option]} :intellij]    ;; copy line up
                  ]}
 
+        ;; good for both vscode and intellij
         {:des "D Layer"
          :rules [:d_layer
                  [:h {:key :!Sleft_arrow}]
                  [:j {:key :!Sdown_arrow}]
                  [:k {:key :!Sup_arrow}]
-                 [:l {:key :!Sright_arrow}]
-                 ]}
+                 [:l {:key :!Sright_arrow}]]}
 
+        ;; good for both vscode and intellij
         {:des "F Layer"
          :rules [:f_layer
                  [:##h :left_arrow]
                  [:##j :down_arrow]
                  [:##k :up_arrow]
-                 [:##l :right_arrow]
-                 ]}
+                 [:##l :right_arrow]]}
 
+        ;; good for both vscode and intellij
         {:des "G Layer"
          :rules [:g_layer
                  [:##h {:key :a :modi :left_control}]
                  [:j :##page_down]
                  [:k :##page_up]
-                 [:l {:key :e :modi :left_control}]
-                 ]}
+                 [:l {:key :e :modi :left_control}]]}
 
         {:des "R Layer"
          :rules [:r_layer
@@ -104,10 +104,13 @@
 
         {:des "V Layer"
          :rules [:v_layer
-                 [:h {:key :left_arrow :modi [:left_shift :left_command :left_control]}]
-                 [:j {:key :down_arrow :modi [:left_shift :left_command :left_control]}]
-                 [:k {:key :up_arrow :modi [:left_shift :left_command :left_control]}]
-                 [:l {:key :right_arrow :modi [:left_shift :left_command :left_control]}]
-                 ]}
+                 [:h {:key :left_arrow :modi [:left_shift :left_command :left_control]} :code] ;; shrink selection
+                 [:j {:key :down_arrow :modi [:left_shift :left_command :left_control]} :code]
+                 [:k {:key :up_arrow :modi [:left_shift :left_command :left_control]} :code]
+                 [:l {:key :right_arrow :modi [:left_shift :left_command :left_control]} :code] ;; extend selection
 
-        ]}
+                 [:h {:key :down_arrow :modi [:left_option]} :intellij] ;; shrink selection
+                 [:l {:key :up_arrow :modi [:left_option]} :intellij] ;; extend selection
+
+
+                 ]}]}
