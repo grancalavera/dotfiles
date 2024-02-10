@@ -19,6 +19,9 @@
 ;; com.jetbrains.intellij
 ;; /Applications/IntelliJ IDEA.app/Contents/MacOS/idea
 
+;; possible solutions for double taps https://github.com/yqrashawn/GokuRakuJoudo/issues/69
+;; https://blog.rtwilson.com/karabiner-elements-and-goku-for-custom-keyboard-shortcuts-in-macos/
+
 {
  :simlayer-threshold 300
  :simlayers {
@@ -38,13 +41,38 @@
 
  :main [
         {:des "Magic Keys"
-         :rules [
-                 ; control and escape to pinkie (caps lock)
-                 [{:key :##caps_lock} [:left_control] nil {:alone :escape}]
+         :rules [; control and escape to pinkie (caps lock)
+                 [{:key :##caps_lock}
+                  [:left_control]
+                  nil
+                  {:alone :escape}]
+
                  ; hyper to tab
-                 [{:key :##tab} {:key :left_shift :modi [:left_command :left_control :left_option]} nil {:alone :tab}]
-                 ; meh to escape, organise imports if alone (make vscode specifig in the future)
-                 [{:key :##escape} {:key :left_shift :modi [:left_control :left_option]} nil {:alone {:key :o :modi [:left_option :left_shift]}}]]}
+                 [{:key :##tab}
+                  {:key :left_shift :modi [:left_command :left_control :left_option]}
+                  nil
+                  {:alone :tab}]
+
+                 ; code: meh to escape, organise imports if alone
+                 [{:key :##escape}
+                  {:key :left_shift :modi [:left_control :left_option]}
+                  :code
+                  {:alone {:key :o :modi [:left_option :left_shift]}}]
+
+                ;;  intellij: meh to escape, organise imports + format if alone
+                 [{:key :##escape}
+                  {:key :left_shift :modi [:left_control :left_option]}
+                  :intellij
+                  {:alone [
+                           {:key :o :modi [:left_option :left_control]}
+                           {:key :l :modi [:left_option :left_command]}
+                           ]}]
+
+                ;; meh to escape
+                 [{:key :##escape}
+                  {:key :left_shift :modi [:left_control :left_option]}
+                  nil]
+                 ]}
 
         {:des "A Layer"
          :rules [:a_layer
