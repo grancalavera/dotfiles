@@ -25,14 +25,15 @@
 {
  :simlayer-threshold 300
  :simlayers {
-          :a_layer {:key :a}
-          :s_layer {:key :s}
-          :d_layer {:key :d}
-          :f_layer {:key :f}
-          :g_layer {:key :g}
-          :r_layer {:key :r}
-          :v_layer {:key :v}
-          }
+             :a_layer {:key :a}
+             :s_layer {:key :s}
+             :d_layer {:key :d}
+             :f_layer {:key :f}
+             :g_layer {:key :g}
+             :r_layer {:key :r}
+             :v_layer {:key :v}
+             :space_layer {:key :spacebar}
+             }
 
  :applications {
                 :code ["^com\\.microsoft\\.VSCode$"]
@@ -74,6 +75,12 @@
                   nil]
                  ]}
 
+        {:des "Space Layer"
+         :rules [:space_layer
+                 [:a {:key :c :modi [:left_command]}]
+                 [:s {:key :v :modi [:left_command]}]
+
+         ]}
         {:des "A Layer"
          :rules [:a_layer
                  [:h {:key :left_arrow :modi [:left_option]} :code]
