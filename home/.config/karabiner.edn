@@ -77,8 +77,21 @@
 
         {:des "Space Layer"
          :rules [:space_layer
-                 [:a {:key :c :modi [:left_command]}]
-                 [:s {:key :v :modi [:left_command]}]
+
+                ;;  magnet
+
+                ;;  thirds
+                 [:a {:key :d :modi [:left_control :left_option]}]
+                 [:semicolon {:key :g :modi [:left_control :left_option]}]
+
+                 ;;  two thirds
+                 [:s {:key :e :modi [:left_control :left_option]}]
+                 [:l {:key :t :modi [:left_control :left_option]}]
+
+                ;;  halfs
+                 [:right_arrow {:key :right_arrow :modi [:left_control :left_option]}]
+                 [:left_arrow {:key :left_arrow :modi [:left_control :left_option]}]
+
 
          ]}
         {:des "A Layer"
