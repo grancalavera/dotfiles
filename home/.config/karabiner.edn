@@ -91,9 +91,14 @@
                 ;;  halfs
                  [:right_arrow {:key :right_arrow :modi [:left_control :left_option]}]
                  [:left_arrow {:key :left_arrow :modi [:left_control :left_option]}]
+                 [:right_arrow {:key :right_arrow :modi [:left_control :left_option]}]
+                 [:left_arrow {:key :left_arrow :modi [:left_control :left_option]}]
 
-
-         ]}
+                ;;  maxi-restore
+                 [:up_arrow {:key :return_or_enter :modi [:left_control :left_option]}]
+                 [:down_arrow {:key :delete_or_backspace :modi [:left_control :left_option]}]
+                 
+                 ]}
         {:des "A Layer"
          :rules [:a_layer
                  [:h {:key :left_arrow :modi [:left_option]} :code]
