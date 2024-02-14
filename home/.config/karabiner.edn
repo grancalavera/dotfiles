@@ -97,6 +97,17 @@
                 ;;  maxi-restore
                  [:up_arrow {:key :return_or_enter :modi [:left_control :left_option]}]
                  [:down_arrow {:key :delete_or_backspace :modi [:left_control :left_option]}]
+
+                ;;  terminals
+                 [:return_or_enter {:key :grave_accent_and_tilde :modi [:left_control]} :code]
+                 [:return_or_enter {:key :f12 :modi [:left_option]} :intellij]
+
+                ;; actions
+                 [:j [:left_shift :left_shift] :intellij]
+                 [:f {:key :return_or_enter :modi [:left_option]} :intellij]
+
+                ;;  clutter
+                 [:k {:key :f12 :modi [:left_shift :left_command]} :intellij]
                  
                  ]}
         {:des "A Layer"
@@ -167,3 +178,20 @@
 
 
                  ]}]}
+
+;; [
+;;   {
+;;     "type": "down",
+;;     "name": {"key_code":"grave_accent_and_tilde"},
+;;     "usagePage": "7 (0x0007)",
+;;     "usage": "53 (0x0035)",
+;;     "misc": ""
+;;   },
+;;   {
+;;     "type": "up",
+;;     "name": {"key_code":"grave_accent_and_tilde"},
+;;     "usagePage": "7 (0x0007)",
+;;     "usage": "53 (0x0035)",
+;;     "misc": ""
+;;   }
+;; ]
