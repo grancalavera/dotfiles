@@ -111,6 +111,8 @@
                 ;;  clutter
                  [:k {:key :f12 :modi [:left_shift :left_command]} :intellij]
 
+                ;;  lock
+                 [:q {:key :q :modi [:left_control :left_command]}]
                  ]}
         {:des "A Layer"
          :rules [:a_layer
