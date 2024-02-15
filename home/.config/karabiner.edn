@@ -103,12 +103,14 @@
                  [:return_or_enter {:key :f12 :modi [:left_option]} :intellij]
 
                 ;; actions
-                 [:j [:left_shift :left_shift] :intellij]
+                 [:f {:key :p :modi [:left_command]} :code]
+                 [:j {:key :p :modi [:left_shift :left_command]} :code]
                  [:f {:key :return_or_enter :modi [:left_option]} :intellij]
+                 [:j [:left_shift :left_shift] :intellij]
 
                 ;;  clutter
                  [:k {:key :f12 :modi [:left_shift :left_command]} :intellij]
-                 
+
                  ]}
         {:des "A Layer"
          :rules [:a_layer
