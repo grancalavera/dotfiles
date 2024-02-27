@@ -23,7 +23,7 @@
 ;; https://blog.rtwilson.com/karabiner-elements-and-goku-for-custom-keyboard-shortcuts-in-macos/
 
 {
- :simlayer-threshold 300
+ :simlayer-threshold 350
  :simlayers {
              :a_layer {:key :a}
              :s_layer {:key :s}
@@ -135,7 +135,7 @@
                  [:l {:key :right_arrow :modi [:left_shift :left_option]} :code]
 
                  [:j {:key :d :modi [:left_command]} :intellij]  ;; copy line down
-                 [:k {:key :up_arrow :modi [:left_shift :left_option]} :intellij]    ;; copy line up
+                 [:k {:key :d :modi [:left_command]} :intellij]  ;; copy line down b/c ij doesn't have copy line up afaik
                  ]}
 
         ;; good for both vscode and intellij
