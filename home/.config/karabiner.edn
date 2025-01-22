@@ -38,15 +38,24 @@
  :applications {
                 :code ["^com\\.microsoft\\.VSCode$"]
                 :intellij ["^com\\.jetbrains\\.intellij$"]
+                :vmware  ["^com\\.vmware\\.horizon$"]
                 }
 
  :main [
         {:des "Magic Keys"
-         :rules [; control and escape to pinkie (caps lock)
+         :rules [
+
+                ; vmware
+                 [:left_control {:key :tab :modi [:left_control :left_command :left_option :left_shift]} :vmware]
+                 [{:key :##left_command} [:left_control] :vmware]
+                 [{:key :##right_command} [:left_control] :vmware]
+                
+                ; control and escape to pinkie (caps lock)
                  [{:key :##caps_lock}
                   [:left_control]
                   nil
                   {:alone :escape}]
+
 
                  ; hyper to tab
                  [{:key :##tab}
@@ -54,6 +63,10 @@
                   nil
                   {:alone :tab}]
 
+                ;; vmware left-control to windows key
+
+                ;; vmware left-command to left-control
+                
                  ; code: meh to escape, organise imports if alone
                  [{:key :##escape}
                   {:key :left_shift :modi [:left_control :left_option]}
@@ -78,7 +91,9 @@
         {:des "Space Layer"
          :rules [:space_layer
 
-                ;;  magnet
+                ;;  vmware 
+                 [:right_arrow {:key :right_arrow :modi [:left_control :left_command]} :vmware]
+                 [:left_arrow {:key :left_arrow :modi [:left_control :left_command]} :vmware]
 
                 ;;  thirds
                  [:a {:key :d :modi [:left_control :left_option]}]
@@ -121,6 +136,11 @@
                  [:k {:key :up_arrow :modi [:left_option]} :code]
                  [:l {:key :right_arrow :modi [:left_option]} :code]
 
+                 [:h {:key :left_arrow :modi [:left_option]} :vmware]
+                 [:j {:key :down_arrow :modi [:left_option]} :vmware]
+                 [:k {:key :up_arrow :modi [:left_option]} :vmware]
+                 [:l {:key :right_arrow :modi [:left_option]} :vmware]
+
                  [:h {:key :left_arrow :modi [:left_shift :left_option]} :intellij]
                  [:j {:key :down_arrow :modi [:left_shift :left_option]} :intellij]   ;; move line down
                  [:k {:key :up_arrow :modi [:left_shift :left_option]} :intellij]     ;; move line up
@@ -133,6 +153,11 @@
                  [:j {:key :down_arrow :modi [:left_shift :left_option]} :code]  ;; copy line down
                  [:k {:key :up_arrow :modi [:left_shift :left_option]} :code]    ;; copy line up
                  [:l {:key :right_arrow :modi [:left_shift :left_option]} :code]
+
+                 [:h {:key :left_arrow :modi [:left_shift :left_option]} :vmware]
+                 [:j {:key :down_arrow :modi [:left_shift :left_option]} :vmware]  ;; copy line down
+                 [:k {:key :up_arrow :modi [:left_shift :left_option]} :vmware]    ;; copy line up
+                 [:l {:key :right_arrow :modi [:left_shift :left_option]} :vmware]
 
                  [:j {:key :d :modi [:left_command]} :intellij]  ;; copy line down
                  [:k {:key :d :modi [:left_command]} :intellij]  ;; copy line down b/c ij doesn't have copy line up afaik
@@ -152,15 +177,17 @@
                  [:##h :left_arrow]
                  [:##j :down_arrow]
                  [:##k :up_arrow]
-                 [:##l :right_arrow]]}
+                 [:##l :right_arrow]
+                 ]}
 
         ;; good for both vscode and intellij
         {:des "G Layer"
          :rules [:g_layer
-                 [:##h {:key :a :modi :left_control}]
+                 [:h {:key :a :modi :left_control}]
                  [:j :##page_down]
                  [:k :##page_up]
-                 [:l {:key :e :modi :left_control}]]}
+                 [:l {:key :e :modi :left_control}]
+                 ]}
 
         {:des "R Layer"
          :rules [:r_layer
@@ -176,6 +203,9 @@
                  [:j {:key :down_arrow :modi [:left_shift :left_command :left_control]} :code]
                  [:k {:key :up_arrow :modi [:left_shift :left_command :left_control]} :code]
                  [:l {:key :right_arrow :modi [:left_shift :left_command :left_control]} :code] ;; extend selection
+
+                 [:h {:key :left_arrow :modi [:left_shift :left_option]} :vmware] ;; shrink selection
+                 [:l {:key :right_arrow :modi [:left_shift :left_option]} :vmware] ;; extend selection
 
                  [:h {:key :down_arrow :modi [:left_option]} :intellij] ;; shrink selection
                  [:l {:key :up_arrow :modi [:left_option]} :intellij] ;; extend selection
