@@ -1,0 +1,33 @@
+;; !  | means mandatory
+;; #  | means optional
+;; C  | left_command
+;; T  | left_control
+;; O  | left_option
+;; S  | left_shift
+;; F  | fn
+;; Q  | right_command
+;; W  | left_control
+;; E  | right_option
+;; R  | right_shift
+;;
+;; !! | mandatory command + control + optional + shift (hyper)
+;; ## | optional any
+
+{
+
+ :applications {
+                :vmware  ["^com\\.vmware\\.horizon$"]
+                }
+
+ :main [
+        {:des "Magic Keys"
+         :rules [
+                ; vmware
+                ;; both command keys to control
+                 [{:key :##left_command} [:left_control] :vmware]
+                 [{:key :##right_command} [:left_control] :vmware]
+                ;; left command key to windows key
+                 [{:key :##left_control} [:left_command] :vmware]
+                 ]}
+        ]}
+
